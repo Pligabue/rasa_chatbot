@@ -1,0 +1,59 @@
+intents:
+- greet
+- thank
+- affirm
+- deny
+- provide_personal_info
+- provide_cpf
+- provide_name
+
+entities:
+- cpf
+- name
+
+slots:
+  cpf:
+    type: unfeaturized
+    auto_fill: false
+  name:
+    type: unfeaturized
+    auto_fill: false
+  age:
+    type: unfeaturized
+    auto_fill: false
+  
+
+responses:
+  utter_greet:
+  - text: Olá! Como posso ajudar?
+
+  utter_bye:
+  - text: Até mais!
+
+  utter_youre_welcome:
+  - text: Sem problemas!
+
+  utter_anything_else:
+  - text: Posso te ajudar em alguma outra coisa?
+
+  utter_ask_cpf:
+  - text: "Qual é seu CPF?"
+
+  utter_invalid_cpf:
+  - text: "Este CPF não é válido. O seu CPF deve conter 11 dígitos!"
+
+  utter_ask_name:
+  - text: "Qual é seu nome?"
+
+  utter_submit:
+  - text: Isso é tudo que preciso!
+
+  utter_slots:
+  - text: "Seus dados são: {cpf} (CPF), {name} (nome)!"
+
+forms:
+  - personal_info_form
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

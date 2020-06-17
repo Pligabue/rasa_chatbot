@@ -1,0 +1,11 @@
+## intent:deny
+- não
+- não é
+- não é esse
+- esse não
+- recuso
+- não não
+- não é isso
+- não, obrigado
+- nao
+- nao, obrigado

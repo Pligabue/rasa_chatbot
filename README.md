@@ -17,7 +17,7 @@ python -m venv <dir name>
 
 ### Activate virtual environment
 ```sh
-<dir name>/Scripts/Activate.ps1 
+<dir name>/Scripts/activate 
 ````
 
 ### Dectivate virtual environment

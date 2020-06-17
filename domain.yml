@@ -1,5 +1,6 @@
 intents:
 - greet
+- bye
 - thank
 - affirm
 - deny

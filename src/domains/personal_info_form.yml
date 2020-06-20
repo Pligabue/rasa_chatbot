@@ -1,0 +1,31 @@
+intents:
+- provide_personal_info
+- provide_cpf
+- provide_name
+
+entities:
+- cpf
+- name
+
+slots:
+  cpf:
+    auto_fill: false
+    type: unfeaturized
+  name:
+    auto_fill: false
+    type: unfeaturized
+
+responses:
+  utter_ask_cpf:
+  - text: Qual é seu CPF?
+  utter_ask_name:
+  - text: Qual é seu nome?
+  utter_invalid_cpf:
+  - text: Este CPF não é válido. O seu CPF deve conter 11 dígitos!
+  utter_slots:
+  - text: 'Seus dados são: {cpf} (CPF), {name} (nome)!'
+  utter_submit:
+  - text: Isso é tudo que preciso!
+  
+forms:
+- personal_info_form

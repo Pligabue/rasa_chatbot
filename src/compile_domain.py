@@ -1,0 +1,3 @@
+import domains
+
+domains.run()

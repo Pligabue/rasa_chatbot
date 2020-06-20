@@ -1,0 +1,16 @@
+intents:
+- greet
+- bye
+- thank
+- affirm
+- deny
+
+responses:
+  utter_anything_else:
+  - text: Posso te ajudar em alguma outra coisa?
+  utter_bye:
+  - text: Até mais!
+  utter_greet:
+  - text: Olá! Como posso ajudar?
+  utter_youre_welcome:
+  - text: Sem problemas!

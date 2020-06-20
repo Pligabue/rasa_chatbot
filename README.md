@@ -44,3 +44,10 @@ rasa run
 ```
 rasa run actions
 ```
+
+## Compile domain
+If you are using the domains folder to build your domain, run this command to compile all partial domain files into the main domain.yml:
+```
+python compile_domain
+```
+Make sure you are using either the domain.yml file or the partial domain files, not both.

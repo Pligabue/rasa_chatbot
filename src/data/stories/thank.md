@@ -4,3 +4,5 @@
   - utter_anything_else
 * deny
   - utter_bye
+* bye
+  - action_restart

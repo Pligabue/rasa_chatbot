@@ -1,0 +1,54 @@
+## intent:get_duplicate_bill
+- gostaria de uma segunda via
+- gostaria de uma segunda via de [fevereiro](month)
+- gostaria de uma segunda via de [abril](month) de [2020](year)
+- segunda via
+- segunda via de [maio](month)
+- segunda via de [junho](month) de [2018](year)
+- podem me mandar uma segunda via da conta
+- podem me mandar uma segunda via da conta de [janeiro](month)
+- podem me mandar uma segunda via da conta de [janeiro](month) de [2019](year)
+- segunda via da conta
+- uma segunda via
+- uma segunda via de [maio](month)
+- uma segunda via de [junho](month) de [2018](year)
+- uma conta
+- conta do mês de [janeiro](month)
+- conta de [fevereiro](month)
+- conta de [março](month) de [2019](year)
+
+## intent:inform
+- [janeiro](month)
+- [fevereiro](month)
+- [março](month)
+- [abril](month)
+- [maio](month)
+- [junho](month)
+- [agosto](month)
+- [setembro](month)
+- [outubro](month)
+- [novembro](month)
+- [dezembro](month)
+- [janeiro](month) de [2020](year)
+- [fevereiro](month) de [2019](year)
+- [março](month) de [2018](year)
+- [abril](month) de [2017](year)
+- [maio](month) de [2016](year)
+- [junho](month) de [2015](year)
+- [agosto](month) de [2014](year)
+- [setembro](month) de [2013](year)
+- [outubro](month) de [2011](year)
+- [novembro](month) de [2010](year)
+- [dezembro](month) de [2009](year)
+- [2020](year)
+- [2019](year)
+- [2018](year)
+- [2017](year)
+- [2016](year)
+- [2015](year)
+- [2014](year)
+- [2013](year)
+- [2012](year)
+
+## regex:year
+- (20|19)[0-9][0-9]

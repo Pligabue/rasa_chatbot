@@ -1,34 +1,48 @@
 entities:
 - cpf
-- name
+- month
+- year
 forms:
-- personal_info_form
+- issue_duplicate_form
 intents:
 - affirm
 - bye
 - deny
+- get_duplicate_bill
 - greet
-- provide_cpf
-- provide_name
-- provide_personal_info
+- inform
 - thank
 responses:
   utter_anything_else:
   - text: Posso te ajudar em alguma outra coisa?
   utter_ask_cpf:
-  - text: Qual é seu CPF?
-  utter_ask_name:
-  - text: Qual é seu nome?
+  - text: Qual seu CPF?
+  utter_ask_month:
+  - text: De que mês?
+  utter_ask_year:
+  - text: De que ano?
   utter_bye:
   - text: Até mais!
+  utter_future_paid_bill:
+  - text: Você já pagou a conta que iria vencer no dia {date}, no valor de R$ {amount}!
+  utter_future_unpaid_bill:
+  - text: Você tem uma conta para ser paga até o dia {date}, no valor de R$ {amount}!
   utter_greet:
   - text: Olá! Como posso ajudar?
-  utter_invalid_cpf:
-  - text: Este CPF não é válido. O seu CPF deve conter 11 dígitos!
-  utter_slots:
-  - text: 'Seus dados são: {cpf} (CPF), {name} (nome)!'
-  utter_submit:
-  - text: Isso é tudo que preciso!
+  utter_invalid_month:
+  - text: Este mês é inválido.
+  utter_invalid_year:
+  - text: Este ano é inválido.
+  utter_no_bills:
+  - text: Você não tem nenhuma conta no sistema!
+  utter_no_document_match:
+  - text: Não há nenhum registro para este CPF!
+  utter_past_paid_bill:
+  - text: Você pagou a conta que iria vencer no dia {date}, no valor de R$ {amount}!
+  utter_past_unpaid_bill:
+  - text: Você tem uma conta a pagar que venceu no dia {date}, no valor de R$ {amount}!
+  utter_submit_issue_duplicate_form:
+  - text: Ok!
   utter_youre_welcome:
   - text: Sem problemas!
 session_config:
@@ -38,6 +52,11 @@ slots:
   cpf:
     auto_fill: false
     type: unfeaturized
+  month:
+    auto_fill: false
+    type: unfeaturized
   name:
+    type: text
+  year:
     auto_fill: false
     type: unfeaturized

@@ -1,0 +1,48 @@
+intents:
+- get_duplicate_bill
+- inform
+
+entities:
+- cpf
+- month
+- year
+
+slots:
+  cpf:
+    auto_fill: false
+    type: unfeaturized
+  month:
+    auto_fill: false
+    type: unfeaturized
+  year:
+    auto_fill: false
+    type: unfeaturized
+
+responses:
+  utter_ask_cpf:
+  - text: Qual seu CPF?
+  utter_ask_month:
+  - text: De que mês?
+  utter_invalid_month:
+  - text: Este mês é inválido.
+  utter_ask_year:
+  - text: De que ano?
+  utter_invalid_year:
+  - text: Este ano é inválido.
+  utter_submit_issue_duplicate_form:
+  - text: Ok!
+  utter_past_paid_bill:
+  - text: Você pagou a conta que iria vencer no dia {date}, no valor de R$ {amount}!
+  utter_future_paid_bill:
+  - text: Você já pagou a conta que iria vencer no dia {date}, no valor de R$ {amount}!
+  utter_past_unpaid_bill:
+  - text: Você tem uma conta a pagar que venceu no dia {date}, no valor de R$ {amount}!
+  utter_future_unpaid_bill:
+  - text: Você tem uma conta para ser paga até o dia {date}, no valor de R$ {amount}!
+  utter_no_document_match:
+  - text: Não há nenhum registro para este CPF!
+  utter_no_bills:
+  - text: Você não tem nenhuma conta no sistema!
+  
+forms:
+- issue_duplicate_form

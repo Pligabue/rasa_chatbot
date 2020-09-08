@@ -5,6 +5,10 @@ intents:
 - affirm
 - deny
 
+slots:
+  name:
+    type: text
+
 responses:
   utter_anything_else:
   - text: Posso te ajudar em alguma outra coisa?

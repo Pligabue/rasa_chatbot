@@ -44,7 +44,7 @@ out/
 .vscode/
 tmp_training_data.json
 .DS_Store
-models/
+./models/
 .mypy_cache/
 *.tar.gz
 docs/nlu/key

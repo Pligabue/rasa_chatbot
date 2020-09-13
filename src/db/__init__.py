@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 from pathlib import Path
 
 from .models import Base
-from .models import User, Bill
+from .models import User, Address, Bill, Occurrence, PowerSupply 
 
 current_dir = Path(__file__).resolve().parent
 

@@ -25,4 +25,4 @@ class PowerSupply(Base):
         return status
 
     def __repr__(self):
-        return f"<Occurrence(category='{self.category}', status='{self.status}')>"
+        return f"<PowerSupply(description='{self.description}', status='{self.status}')>"

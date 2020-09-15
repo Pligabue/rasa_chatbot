@@ -10,8 +10,9 @@ class Occurrence(Base):
     
     power_supply_id = Column(Integer, ForeignKey('power_supplies.id'))
 
-    start_datetime = Column(DateTime)
-    end_datetime = Column(DateTime)
+    start_time = Column(DateTime)
+    end_time = Column(DateTime)
+    estimated_end_time = Column(DateTime)
     category = Column(String)
     description = Column(Text)
     status = Column(String)
@@ -32,4 +33,4 @@ class Occurrence(Base):
         return status
 
     def __repr__(self):
-        return f"<Occurrence(category='{self.category}', status='{self.status}')>"
+        return f"<Occurrence(category='{self.category}', status='{self.status}', start_time={self.start_time}, end_time={self.end_time} estimated_end_time={self.estimated_end_time})>"

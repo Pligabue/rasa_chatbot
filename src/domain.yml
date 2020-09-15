@@ -4,11 +4,13 @@ entities:
 - year
 forms:
 - issue_duplicate_form
+- provide_power_supply_info_form
 intents:
 - affirm
 - bye
 - deny
 - get_duplicate_bill
+- get_power_supply_info
 - greet
 - inform
 - thank
@@ -29,6 +31,8 @@ responses:
   - text: Você tem uma conta para ser paga até o dia {date}, no valor de R$ {amount}!
   utter_greet:
   - text: Olá! Como posso ajudar?
+  utter_invalid_cpf:
+  - text: Este CPF é inválido.
   utter_invalid_month:
   - text: Este mês é inválido.
   utter_invalid_year:
@@ -37,10 +41,14 @@ responses:
   - text: Você não tem nenhuma conta no sistema!
   utter_no_document_match:
   - text: Não há nenhum registro para este CPF!
+  utter_occurrence_status:
+  - text: '{category} {status} na sua região. {estimation}. {additional_comments}'
   utter_past_paid_bill:
   - text: Você pagou a conta que iria vencer no dia {date}, no valor de R$ {amount}!
   utter_past_unpaid_bill:
   - text: Você tem uma conta a pagar que venceu no dia {date}, no valor de R$ {amount}!
+  utter_power_supply_info:
+  - text: O transformador da sua região {status}.
   utter_submit_issue_duplicate_form:
   - text: Ok!
   utter_youre_welcome:

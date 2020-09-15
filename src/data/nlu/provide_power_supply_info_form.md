@@ -1,0 +1,13 @@
+## intent:get_power_supply_info
+- gostaria de informações sobre a energia
+- gostaria de informações sobre a eletricidade
+- houve uma queda de energia
+- houve uma queda de eletricidade
+- porque estou sem energia
+- porque estou sem eletricidade
+- caiu a energia
+- caiu a eletricidade
+- estou sem energia
+- estou sem eletricidade
+- cade a energia
+- cade a eletricidade

@@ -19,6 +19,9 @@ class PowerSupply(Base):
     address = relationship("Address", back_populates="power_supply")
     users = relationship("User", back_populates="power_supply")
 
+    def down(self):
+        return self.status == "down"
+
     @validates('status')
     def validate_status(self, key, status):
         assert status in ["up", "down"]

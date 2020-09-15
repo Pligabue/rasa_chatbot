@@ -1,10 +1,8 @@
-from db import Session
+from db import session
 from db import User, Address, Bill, Occurrence, PowerSupply
 
 import random
-from datetime import date, timedelta,datetime
-
-session = Session()
+from datetime import date, timedelta, datetime
 
 ps_addresses = [Address(country="BR", state="SP", city="São Paulo", postal_code=f"0123457{i}") for i in range(5)]
 power_supplies = [
@@ -21,8 +19,9 @@ occurrences = [
         category=("power_outage" if bool(random.getrandbits(1)) else "maintenance"),
         description=f"Occurance {i}",
         status="done" if power_supplies[i].status == "up" else ("in_progress" if bool(random.getrandbits(1)) else "cancelled"),
-        start_datetime=datetime.now()-timedelta(weeks=i+1),
-        end_datetime=datetime.now()-timedelta(weeks=i) if power_supplies[i].status == "up" else None
+        start_time=datetime.now()-timedelta(weeks=i+1),
+        end_time=datetime.now()-timedelta(weeks=i) if power_supplies[i].status == "up" else None,
+        estimated_end_time=(datetime.now()+timedelta(hours=i) if bool(random.getrandbits(1)) else None)
     ) for i in range(5)
 ]
 

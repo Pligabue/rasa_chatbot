@@ -13,3 +13,4 @@ engine = create_engine(f'sqlite:///{current_dir}/rasa.sqlite', echo=True)
 Base.metadata.create_all(engine)
 
 Session = sessionmaker(bind=engine)
+session = Session()

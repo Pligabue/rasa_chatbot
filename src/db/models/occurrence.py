@@ -18,9 +18,21 @@ class Occurrence(Base):
     status = Column(String)
 
     power_supply = relationship("PowerSupply", back_populates="occurrences")
+
+    def address(self):
+        return self.power_supply.address
+
+    def status_is(self, status):
+        return self.status == status
+
+    def category_is(self, category):
+        return self.category == category
+
+    def has_estimation(self):
+        return self.estimated_end_time is not None
     
-    def is_solved(self):
-        return self.status == "solved"
+    def time_until_estimation(self):
+        return self.estimated_end_time - datetime.now()
 
     @validates('category')
     def validate_category(self, key, category):
@@ -29,7 +41,7 @@ class Occurrence(Base):
 
     @validates('status')
     def validate_status(self, key, status):
-        assert status in ["in_progress", "done", "cancelled"]
+        assert status in ["pending", "in_progress", "done", "cancelled"]
         return status
 
     def __repr__(self):

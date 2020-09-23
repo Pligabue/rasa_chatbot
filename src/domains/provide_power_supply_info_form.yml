@@ -1,0 +1,11 @@
+intents:
+- get_power_supply_info
+
+forms:
+- provide_power_supply_info_form
+
+responses:
+  utter_power_supply_info:
+  - text: "O transformador da sua região {status}."
+  utter_occurrence_status:
+  - text: "{category} {status} na sua região. {estimation}. {additional_comments}"

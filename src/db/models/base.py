@@ -2,11 +2,13 @@ from sqlalchemy.ext.declarative import declarative_base, declared_attr
 from sqlalchemy import Column, Integer, DateTime
 from sqlalchemy.sql import func
 
+import re
+
 class Mixin(object):
 
     @declared_attr
     def __tablename__(cls):
-        return cls.__name__.lower() + "s"
+        return re.sub(r'(?<!^)(?=[A-Z])', '_', cls.__name__).lower() + ("s" if cls.__name__[-1] != "s" else "es")
 
     id =  Column(Integer, primary_key=True)
 

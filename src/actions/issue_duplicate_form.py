@@ -69,7 +69,7 @@ class IssueDuplicateForm(FormAction):
             return { "cpf": cpf }
         else:
             dispatcher.utter_message(template="utter_invalid_cpf")
-            return { "cpf": None}
+            return { "cpf": None }
 
     def validate_month(
         self,

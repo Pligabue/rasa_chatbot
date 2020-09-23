@@ -1,0 +1,34 @@
+intents:
+- inform
+
+entities:
+- cpf
+- month
+- year
+
+slots:
+  cpf:
+    auto_fill: false
+    type: unfeaturized
+  month:
+    auto_fill: false
+    type: unfeaturized
+  year:
+    auto_fill: false
+    type: unfeaturized
+
+responses:
+  utter_ask_cpf:
+  - text: Qual seu CPF?
+  utter_invalid_cpf:
+  - text: Este CPF é inválido.
+  utter_no_document_match:
+  - text: Não há nenhum registro para este CPF!
+  utter_ask_month:
+  - text: De que mês?
+  utter_invalid_month:
+  - text: Este mês é inválido.
+  utter_ask_year:
+  - text: De que ano?
+  utter_invalid_year:
+  - text: Este ano é inválido.

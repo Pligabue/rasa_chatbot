@@ -9,6 +9,8 @@ from rasa_sdk.executor import CollectingDispatcher
 
 from db import session, User, PowerSupply, Occurrence
 
+from helpers.user_power_supply import get_user_power_supply
+
 class ProvidePowerSupplyInfoForm(FormAction):
 
     def name(self) -> Text:
@@ -36,7 +38,7 @@ class ProvidePowerSupplyInfoForm(FormAction):
             dispatcher.utter_message(template="utter_no_document_match")
             return []
 
-        power_supply = user.power_supply
+        power_supply = get_user_power_supply(user)
         occurrence = power_supply.occurrences.first()
 
         dispatcher.utter_message(

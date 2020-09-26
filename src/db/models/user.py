@@ -7,7 +7,6 @@ from .base import Base
 
 class User(Base):
     
-    power_supply_id = Column(Integer, ForeignKey('power_supplies.id'))
     address_id = Column(Integer, ForeignKey('addresses.id'))
 
     document = Column(String, unique=True)
@@ -16,7 +15,6 @@ class User(Base):
     email = Column(String)
 
     bills = relationship("Bill", back_populates="user")
-    power_supply = relationship("PowerSupply", back_populates="users")
     address = relationship("Address", back_populates="users")
 
     def full_name(self):

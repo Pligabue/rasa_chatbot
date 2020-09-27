@@ -44,7 +44,7 @@ class ProvidePowerSupplyInfoForm(FormAction):
         dispatcher.utter_message(
             template="utter_power_supply_info",
             status=("não está funcionando momentaneamente" if power_supply.down() 
-                    else "funcionando normalmente"))
+                    else "está funcionando normalmente"))
 
         category = ("Uma manutenção" if occurrence.category_is("maintenance") else 
                     "Uma queda de energia" if occurrence.category_is("power_outage") else

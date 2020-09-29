@@ -1,15 +1,17 @@
 from typing import Dict, Text, Any, List, Union, Optional
 import re
-import datetime
-import difflib
+from datetime import datetime
 
 from rasa_sdk import Tracker
 from rasa_sdk.forms import FormAction, REQUESTED_SLOT
 from rasa_sdk.executor import CollectingDispatcher
 
-from db import session, User, PowerSupply, Occurrence
+from db import session, User, PowerSupply, Occurrence, Address
 
-from helpers.user_power_supply import get_user_power_supply
+from helpers.address_power_supply import get_postal_code_power_supply
+from helpers.occurrence_messages import get_occurrence_messages
+
+from services.dispatch_team import dispatch_team
 
 class ProvidePowerSupplyInfoForm(FormAction):
 
@@ -18,11 +20,11 @@ class ProvidePowerSupplyInfoForm(FormAction):
 
     @staticmethod
     def required_slots(tracker: Tracker) -> List[Text]:
-        return ["cpf"]
+        return ["cep"]
 
     def slot_mappings(self) -> Dict[Text, Union[Dict, List[Dict]]]:
         return {
-            "cpf": self.from_entity(entity="cpf", intent="inform")
+            "cep": [self.from_entity(entity="cep", intent="inform")]
         }
 
     def submit(
@@ -31,59 +33,72 @@ class ProvidePowerSupplyInfoForm(FormAction):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) -> List[Dict]:
-        document = tracker.get_slot("cpf")
+        cep = tracker.get_slot("cep")
 
-        user = session.query(User).filter(User.document == document).one_or_none()
-        if user is None:
-            dispatcher.utter_message(template="utter_no_document_match")
+        power_supply = get_postal_code_power_supply(cep)
+
+        if power_supply is None:
+
+            dispatcher.utter_message(template="utter_no_power_supply")
             return []
 
-        power_supply = get_user_power_supply(user)
-        occurrence = power_supply.occurrences.first()
+        elif power_supply.is_down():
 
-        dispatcher.utter_message(
-            template="utter_power_supply_info",
-            status=("não está funcionando momentaneamente" if power_supply.down() 
-                    else "está funcionando normalmente"))
+            occurrence = power_supply.occurrences.first()
 
-        category = ("Uma manutenção" if occurrence.category_is("maintenance") else 
-                    "Uma queda de energia" if occurrence.category_is("power_outage") else
-                    "Um problema")
-        status = ("está sendo feita" if occurrence.status_is("in_progress") and occurrence.category_is("maintenance") else
-                  "está pendente" if occurrence.status_is("pending") and occurrence.category_is("maintenance") else
-                  "está sendo investigada" if occurrence.status_is("in_progress") and occurrence.category_is("power_outage") else 
-                  "ocorreu")
-        if occurrence.has_estimation():
-            hours_until_estimation = occurrence.time_until_estimation().total_seconds()//3600
-            if hours_until_estimation < 1:
-                estimation = f"A operação deve ser normalizada em menos de uma hora"
-            else:
-                estimation = f"A operação deve ser normalizada dentro de {hours_until_estimation} hora{'s' if hours_until_estimation == 1 else ''}"
-        else:
-            estimation = "Ainda não há previsão de conclusão"
-        additional_comments = f"Para acompanhar o status da ocorrência, acesse sitegenerico.com/ocorrencia/{occurrence.id}."
+            dispatcher.utter_message(
+                template="utter_power_supply_info",
+                status=("não está funcionando momentaneamente"))
 
-        if power_supply.down():
+            messages = get_occurrence_messages(occurrence)
+
             dispatcher.utter_message(
                 template="utter_occurrence_status",
-                category=category,
-                status=status,
-                estimation=estimation,
-                additional_comments=additional_comments)
-         
+                category=messages["category"],
+                status=messages["status"],
+                estimation=messages["estimation"],
+                additional_comments=messages["additional_comments"])
+
+        elif power_supply.is_up():
+
+            occurrence = Occurrence(
+                power_supply=power_supply, 
+                category="power_outage",
+                status="pending",
+                start_time=datetime.now())
+
+            power_supply.status = "pending"
+
+            session.add(occurrence)
+            session.commit()
+
+            dispatcher.utter_message(template="utter_start_investigations")
+
+        elif power_supply.is_pending():
+
+            occurrence = power_supply.occurrences.first()
+            occurrence.status = "in_progress"
+            power_supply.status = "down"
+
+            session.commit()
+
+            dispatch_team(occurrence)
+
+            dispatcher.utter_message(template="utter_team_on_the_way")
+            
         return []
 
-    def validate_cpf(
+    def validate_cep(
         self,
         value: Text,
         dispatcher: CollectingDispatcher,
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) -> Dict[Text, Any]:
-        print(f"CPF IS {value}")
-        cpf = re.sub(r"[^\d]", "", value)
-        if len(cpf) == 11:
-            return { "cpf": cpf }
+        print(f"CEP IS {value}")
+        cep = re.sub(r"[^\d]", "", value)
+        if len(cep) == 8:
+            return { "cep": cep }
         else:
-            dispatcher.utter_message(template="utter_invalid_cpf")
-            return { "cpf": None}
+            dispatcher.utter_message(template="utter_invalid_cep")
+            return { "cep": None}

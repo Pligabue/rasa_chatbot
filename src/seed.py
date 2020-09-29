@@ -1,16 +1,20 @@
 from db import session
 from db import User, Address, Bill, Occurrence, PowerSupply
 
+from services.postal_info import build_address
+
 import random
 from datetime import date, timedelta, datetime
 
-ps_addresses = [Address(country="BR", state="SP", city="São Paulo", postal_code=f"0123457{i}") for i in range(5)]
+postal_code_samples = ["05429100", "02420060", "03803140", "08245590", "08141710", "04575020", "01543971", "02308201", "02807100", "05657110"]
+
+ps_addresses = [build_address(postal_code_samples[i]) for i in range(10)]
 power_supplies = [
     PowerSupply(
         address=ps_addresses[i],
         description=f"Power Supply {i}",
         status=("up" if bool(random.getrandbits(1)) else "down")
-    ) for i in range(5)
+    ) for i in range(10)
 ]
 
 occurrences = [
@@ -25,15 +29,14 @@ occurrences = [
     ) for i in range(5)
 ]
 
-user_addresses = [Address(country="BR", state="SP", city="São Paulo", postal_code=f"1234578{i}") for i in range(10)]
+user_addresses = [build_address(postal_code_samples[i]) for i in range(10)]
 users = [
     User(
         document=f"0123456789{i}",
         first_name="User",
         last_name=str(i),
         email=f"user{i}@example.com",
-        address=user_addresses[i],
-        power_supply=power_supplies[int(i/2)]
+        address=user_addresses[i]
     ) for i in range(10)]
 
 bills = []

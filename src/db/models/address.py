@@ -10,6 +10,9 @@ class Address(Base):
     country = Column(String)
     state = Column(String)
     city = Column(String)
+    neighbourhood = Column(String)
+    street = Column(String)
+    number = Column(String)
     postal_code = Column(String)
 
     users = relationship("User", back_populates="address")

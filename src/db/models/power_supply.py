@@ -17,7 +17,6 @@ class PowerSupply(Base):
 
     occurrences = relationship("Occurrence", back_populates="power_supply", order_by="desc(Occurrence.start_time)", lazy="dynamic")
     address = relationship("Address", back_populates="power_supply")
-    users = relationship("User", back_populates="power_supply")
 
     def down(self):
         return self.status == "down"

@@ -1,4 +1,5 @@
 entities:
+- cep
 - cpf
 - month
 - year
@@ -17,6 +18,8 @@ intents:
 responses:
   utter_anything_else:
   - text: Posso te ajudar em alguma outra coisa?
+  utter_ask_cep:
+  - text: Qual seu CEP?
   utter_ask_cpf:
   - text: Qual seu CPF?
   utter_ask_month:
@@ -31,6 +34,8 @@ responses:
   - text: Você tem uma conta para ser paga até o dia {date}, no valor de R$ {amount}!
   utter_greet:
   - text: Olá! Como posso ajudar?
+  utter_invalid_cep:
+  - text: Este CEP é inválido.
   utter_invalid_cpf:
   - text: Este CPF é inválido.
   utter_invalid_month:
@@ -41,6 +46,9 @@ responses:
   - text: Você não tem nenhuma conta no sistema!
   utter_no_document_match:
   - text: Não há nenhum registro para este CPF!
+  utter_no_power_supply:
+  - text: Não há nenhum gerador de energia nesta área. Certifique-se que seu CEP
+      está correto.
   utter_occurrence_status:
   - text: '{category} {status} na sua região. {estimation}. {additional_comments}'
   utter_past_paid_bill:
@@ -49,14 +57,22 @@ responses:
   - text: Você tem uma conta a pagar que venceu no dia {date}, no valor de R$ {amount}!
   utter_power_supply_info:
   - text: O transformador da sua região {status}.
+  utter_start_investigations:
+  - text: Obrigado pelo alerta! Vamos começar a investigação e devemos ter novidades
+      em breve.
   utter_submit_issue_duplicate_form:
   - text: Ok!
+  utter_team_on_the_way:
+  - text: Obrigado pelo alerta! Um time está sendo enviado para corrigir o problema.
   utter_youre_welcome:
   - text: Sem problemas!
 session_config:
   carry_over_slots_to_new_session: true
   session_expiration_time: 60
 slots:
+  cep:
+    auto_fill: false
+    type: unfeaturized
   cpf:
     auto_fill: false
     type: unfeaturized

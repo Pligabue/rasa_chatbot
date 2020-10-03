@@ -5,6 +5,7 @@ entities:
 - cpf
 - month
 - year
+- cep
 
 slots:
   cpf:
@@ -16,12 +17,19 @@ slots:
   year:
     auto_fill: false
     type: unfeaturized
+  cep:
+    auto_fill: false
+    type: unfeaturized
 
 responses:
   utter_ask_cpf:
   - text: Qual seu CPF?
   utter_invalid_cpf:
   - text: Este CPF é inválido.
+  utter_ask_cep:
+  - text: Qual seu CEP?
+  utter_invalid_cep:
+  - text: Este CEP é inválido.
   utter_no_document_match:
   - text: Não há nenhum registro para este CPF!
   utter_ask_month:

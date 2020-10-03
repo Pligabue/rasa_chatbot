@@ -5,7 +5,13 @@ forms:
 - provide_power_supply_info_form
 
 responses:
+  utter_no_power_supply:
+  - text: Não há nenhum gerador de energia nesta área. Certifique-se que seu CEP está correto.
   utter_power_supply_info:
   - text: "O transformador da sua região {status}."
   utter_occurrence_status:
   - text: "{category} {status} na sua região. {estimation}. {additional_comments}"
+  utter_start_investigations:
+  - text: "Obrigado pelo alerta! Vamos começar a investigação e devemos ter novidades em breve."
+  utter_team_on_the_way:
+  - text: Obrigado pelo alerta! Um time está sendo enviado para corrigir o problema.

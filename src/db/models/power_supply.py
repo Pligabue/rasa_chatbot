@@ -18,12 +18,18 @@ class PowerSupply(Base):
     occurrences = relationship("Occurrence", back_populates="power_supply", order_by="desc(Occurrence.start_time)", lazy="dynamic")
     address = relationship("Address", back_populates="power_supply")
 
-    def down(self):
+    def is_down(self):
         return self.status == "down"
+
+    def is_up(self):
+        return self.status == "up"
+
+    def is_pending(self):
+        return self.status == "pending"
 
     @validates('status')
     def validate_status(self, key, status):
-        assert status in ["up", "down"]
+        assert status in ["up", "down", "pending"]
         return status
 
     def __repr__(self):

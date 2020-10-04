@@ -37,6 +37,15 @@
 - vocês podem me enviar a conta de [setembro](month) de [2019](year)
 - preciso de uma segunda via
 - preciso de uma 2a via
+- perdi minha conta
+- perdi a minha conta
+- não recebi a conta
+- não recebi minha conta
+- não me enviaram a conta
+- vocês não enviaram a conta
+- acho que vcs não enviaram a conta
+- preciso da conta
+- preciso da minha conta
 
 ## intent:inform
 - [janeiro](month)

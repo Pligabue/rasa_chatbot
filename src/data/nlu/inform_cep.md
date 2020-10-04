@@ -19,6 +19,8 @@
 - o cep aqui é [45682120](cep)
 - nosso cep é [45682-120](cep)
 - nosso cep é: [45682 120](cep)
+- nosso cep eh [45682-120](cep)
+- nosso cep eh: [45682 120](cep)
 
 ## regex:cep
 - \d{5}\D?\d{3}

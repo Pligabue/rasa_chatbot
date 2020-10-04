@@ -25,6 +25,10 @@
 - tchau tchau
 - bye
 - bye bye
+- falou
+- flw
+- fl
+- xau
 
 ## intent:thank
 - obrigado
@@ -57,17 +61,30 @@
 - eh
 - uhum
 - aham
+- yep
+- yes
+- check
+- beleza
+- blz
+- si
+- s
 
 ## intent:deny
 - não
 - não é
 - não é esse
+- não é bem esse
 - esse não
 - recuso
 - não não
 - não é isso
+- não é bem isso
+- não eh isso
+- de jeito nenhum
+- de modo algum
 - não, obrigado
 - nao
 - nao, obrigado
-- no
 - nop
+- no
+- n

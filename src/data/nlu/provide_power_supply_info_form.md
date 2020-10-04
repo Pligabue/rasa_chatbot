@@ -3,6 +3,8 @@
 - gostaria de informações sobre a eletricidade
 - houve uma queda de energia
 - houve uma queda de eletricidade
+- houve um problema na distribuição de energia
+- há um problema na distribuição de energia
 - porque estou sem energia
 - porque estou sem eletricidade
 - a energia não está funcionando
@@ -19,6 +21,18 @@
 - estamos sem luz
 - estamos sem energia
 - estamos sem eletricidade
-- cade a energia
 - cadê a energia
+- cade a energia
 - cade a eletricidade
+- minha rua está sem energia
+- minha rua está sem eletricidade
+- minha rua tá sem luz
+- meu prédio está sem energia
+- meu prédio está sem eletricidade
+- meu prédio está sem luz
+- minha casa está sem energia
+- minha casa está sem eletricidade
+- minha casa está sem luz
+- meu quarteirão está sem energia
+- meu quarteirão está sem eletricidade
+- meu quarteirão está sem luz

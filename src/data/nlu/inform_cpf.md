@@ -18,6 +18,8 @@
 - o cpf que está cadastrado é [888.888.888-88](cpf)
 - ficou no cpf [999.999.999-99](cpf)
 - o cpf da conta é [000.000.000-00](cpf)
+- o cpf do cadastro é [11111111111](cpf)
+- tá no cpf [22222222222](cpf)
 
 ## regex:cpf
 - \d{3}\D?\d{3}\D?\d{3}\D?\d{2}

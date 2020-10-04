@@ -9,4 +9,7 @@
 - o nome dele é [Geferson](name)
 - o nome dela é [Rosangela](name)
 - está no nome de [Giovanna](name)
+- tá no nome de [Vitor](name)
+- a conta está no nome de [Lucia](name)
+- a conta ficou no nome de [Mayara](name)
 - eu sou [Diego](name)

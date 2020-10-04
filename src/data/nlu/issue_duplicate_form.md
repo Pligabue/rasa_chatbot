@@ -8,6 +8,10 @@
 - podem me mandar uma segunda via da conta
 - podem me mandar uma segunda via da conta de [janeiro](month)
 - podem me mandar uma segunda via da conta de [janeiro](month) de [2019](year)
+- vocês podem me mandar uma segunda via da conta
+- vcs podem me mandar uma segunda via da conta
+- vocês podem me mandar uma 2a via da conta
+- vcs podem me mandar uma 2a via da conta
 - segunda via da conta
 - uma segunda via
 - uma segunda via de [maio](month)

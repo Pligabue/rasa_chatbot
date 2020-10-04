@@ -5,9 +5,20 @@
 - houve uma queda de eletricidade
 - porque estou sem energia
 - porque estou sem eletricidade
+- a energia não está funcionando
+- a energia não tá funcionando
+- caiu a luz
 - caiu a energia
 - caiu a eletricidade
+- tô sem luz
+- tô sem energia
+- tô sem eletricidade
+- estou sem luz
 - estou sem energia
 - estou sem eletricidade
+- estamos sem luz
+- estamos sem energia
+- estamos sem eletricidade
 - cade a energia
+- cadê a energia
 - cade a eletricidade

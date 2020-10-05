@@ -68,6 +68,7 @@
 - blz
 - si
 - s
+- y
 
 ## intent:deny
 - não

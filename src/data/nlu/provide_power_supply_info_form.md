@@ -29,10 +29,10 @@
 - minha rua tá sem luz
 - meu prédio está sem energia
 - meu prédio está sem eletricidade
-- meu prédio está sem luz
+- meu predio está sem luz
 - minha casa está sem energia
 - minha casa está sem eletricidade
 - minha casa está sem luz
 - meu quarteirão está sem energia
 - meu quarteirão está sem eletricidade
-- meu quarteirão está sem luz
+- meu quarteirao está sem luz

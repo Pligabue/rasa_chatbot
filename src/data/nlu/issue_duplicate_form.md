@@ -3,6 +3,8 @@
 - gostaria de uma segunda via de [fevereiro](month)
 - gostaria de uma segunda via de [abril](month) de [2020](year)
 - segunda via
+- 2ª via
+- 2a via
 - segunda via de [maio](month)
 - segunda via de [junho](month) de [2018](year)
 - podem me mandar uma segunda via da conta
@@ -24,6 +26,9 @@
 - vc pode me mandar uma 2a via da conta
 - vc pode me enviar uma 2a via da conta
 - vc poderia me enviar uma 2a via da conta
+- você pode me mandar uma 2ª via da conta
+- você pode me enviar uma 2ª via da conta
+- você poderia me enviar uma 2ª via da conta
 - segunda via da conta
 - uma segunda via
 - uma segunda via de [maio](month)

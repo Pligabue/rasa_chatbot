@@ -5,6 +5,7 @@ from datetime import datetime
 
 from .base import Base
 
+
 class Bill(Base):
 
     user_id = Column(Integer, ForeignKey('users.id'))
@@ -15,4 +16,5 @@ class Bill(Base):
     user = relationship("User", back_populates="bills")
 
     def __repr__(self):
-        return f"<Bill(user='user_document='{self.user.document}' paid={self.paid} due_date={self.due_date})>"
+        return f"<Bill(user='user_document='{self.user.document}'" \
+               f"paid={self.paid} due_date={self.due_date})>"

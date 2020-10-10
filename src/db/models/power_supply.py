@@ -6,8 +6,9 @@ from datetime import datetime
 
 from .base import Base
 
+
 class PowerSupply(Base):
-    
+
     __tablename__ = "power_supplies"
 
     address_id = Column(Integer, ForeignKey('addresses.id'))
@@ -15,7 +16,11 @@ class PowerSupply(Base):
     description = Column(Text)
     status = Column(String)
 
-    occurrences = relationship("Occurrence", back_populates="power_supply", order_by="desc(Occurrence.start_time)", lazy="dynamic")
+    occurrences = relationship("Occurrence",
+                               back_populates="power_supply",
+                               order_by="desc(Occurrence.start_time)",
+                               lazy="dynamic")
+
     address = relationship("Address", back_populates="power_supply")
 
     def is_down(self):
@@ -33,4 +38,5 @@ class PowerSupply(Base):
         return status
 
     def __repr__(self):
-        return f"<PowerSupply(description='{self.description}', status='{self.status}')>"
+        return f"<PowerSupply(description='{self.description}', " \
+               f"status='{self.status}')>"

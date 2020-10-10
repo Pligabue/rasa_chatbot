@@ -6,8 +6,9 @@ from datetime import datetime
 
 from .base import Base
 
+
 class Occurrence(Base):
-    
+
     power_supply_id = Column(Integer, ForeignKey('power_supplies.id'))
 
     start_time = Column(DateTime)
@@ -30,7 +31,7 @@ class Occurrence(Base):
 
     def has_estimation(self):
         return self.estimated_end_time is not None
-    
+
     def time_until_estimation(self):
         return self.estimated_end_time - datetime.now()
 
@@ -45,4 +46,7 @@ class Occurrence(Base):
         return status
 
     def __repr__(self):
-        return f"<Occurrence(category='{self.category}', status='{self.status}', start_time={self.start_time}, end_time={self.end_time} estimated_end_time={self.estimated_end_time})>"
+        return f"<Occurrence(category='{self.category}', " \
+               f"status='{self.status}', start_time={self.start_time}, " \
+               f"end_time={self.end_time} " \
+               f"estimated_end_time={self.estimated_end_time})>"

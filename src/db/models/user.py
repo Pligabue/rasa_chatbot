@@ -5,8 +5,9 @@ from datetime import datetime
 
 from .base import Base
 
+
 class User(Base):
-    
+
     address_id = Column(Integer, ForeignKey('addresses.id'))
 
     document = Column(String, unique=True)
@@ -21,4 +22,5 @@ class User(Base):
         return f"{self.first_name} {self.last_name}"
 
     def __repr__(self):
-        return f"<User(fullname='{self.first_name} {self.last_name}', document='{self.document}', email='{self.email}')>"
+        return f"<User(fullname='{self.full_name()}', " \
+               f"document='{self.document}', email='{self.email}')>"

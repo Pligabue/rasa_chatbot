@@ -1,3 +1,3 @@
 def dispatch_team(occurrence):
-    # mock fuction
+    # mock function
     return

@@ -5,8 +5,9 @@ from datetime import datetime
 
 from .base import Base
 
+
 class Address(Base):
-    
+
     country = Column(String)
     state = Column(String)
     city = Column(String)
@@ -18,6 +19,6 @@ class Address(Base):
     users = relationship("User", back_populates="address")
     power_supply = relationship("PowerSupply", back_populates="address")
 
-
     def __repr__(self):
-        return f"<Address(country='{self.country}', state='{self.state}', city='{self.city}, postal_code={self.postal_code}')>"
+        return f"<Address(country='{self.country}', state='{self.state}', " \
+               f"city='{self.city}, postal_code={self.postal_code}')>"

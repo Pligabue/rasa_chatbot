@@ -18,6 +18,7 @@
 
 ## intent:bye
 - tchau
+- adeus
 - até
 - até mais
 - até logo

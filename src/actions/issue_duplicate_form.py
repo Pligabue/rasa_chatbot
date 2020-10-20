@@ -96,9 +96,7 @@ class IssueDuplicateForm(FormAction):
         if not matches:
             return {"month": None}
 
-        print(f"match is {months.index(matches[0])}")
         month_num = months.index(matches[0]) + 1
-        print(f"month is {month_num}")
         return {"month": month_num}
 
     def validate_year(self,

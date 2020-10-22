@@ -1,6 +1,8 @@
 ## intent:get_duplicate_bill
 - gostaria de uma segunda via
+- gostaria da segunda via de uma conta
 - gostaria de uma segunda via de [fevereiro](month)
+- quero a conta de [dezembro](month) de [2019](year)
 - gostaria de uma segunda via de [abril](month) de [2020](year)
 - segunda via
 - 2ª via

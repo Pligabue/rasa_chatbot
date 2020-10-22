@@ -16,6 +16,11 @@ pipeline:
     epochs: 100
   - name: CRFEntityExtractor
     epochs: 100
+    "features": [
+      ["pattern"],
+      ["pattern"],
+      ["pattern"]
+    ]
   - name: EntitySynonymMapper
   - name: ResponseSelector
     epochs: 100

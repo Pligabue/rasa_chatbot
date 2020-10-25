@@ -4,6 +4,7 @@ intents:
 - thank
 - affirm
 - deny
+- faq
 
 slots:
   name:
@@ -18,3 +19,6 @@ responses:
   - text: Olá! Como posso ajudar?
   utter_youre_welcome:
   - text: Sem problemas!
+
+actions:
+- respond_faq

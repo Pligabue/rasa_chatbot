@@ -7,7 +7,7 @@ from rasa_sdk import Tracker
 from rasa_sdk.forms import FormAction, REQUESTED_SLOT
 from rasa_sdk.executor import CollectingDispatcher
 
-from db import Session, User
+from db import session, User
 
 
 class IssueDuplicateForm(FormAction):
@@ -35,7 +35,6 @@ class IssueDuplicateForm(FormAction):
         month = tracker.get_slot("month")
         year = tracker.get_slot("year")
 
-        session = Session()
         user = (session.query(User)
                 .filter(User.document == document)
                 .one_or_none())
@@ -44,9 +43,9 @@ class IssueDuplicateForm(FormAction):
             dispatcher.utter_message(template="utter_no_document_match")
             return []
 
-        bills = filter(lambda bill: (bill.due_date.month == month
-                                     and bill.due_date.year == year),
-                       user.bills)
+        bills = [bill for bill in user.bills
+                 if (bill.due_date.month == month and bill.due_date.year)]
+
         if not bills:
             dispatcher.utter_message(template="utter_no_bills")
             return []
@@ -70,15 +69,20 @@ class IssueDuplicateForm(FormAction):
                      tracker: Tracker,
                      domain: Dict[Text, Any]) -> Dict[Text, Any]:
 
-        print(f"CPF IS {value}")
-
         cpf = re.sub(r"[^\d]", "", value)
 
-        if len(cpf) == 11:
-            return {"cpf": cpf}
-        else:
-            dispatcher.utter_message(template="utter_invalid_cpf")
+        user = (session.query(User)
+                .filter(User.document == cpf)
+                .one_or_none())
+            
+        if user is None:
+            if len(cpf) == 11:
+                dispatcher.utter_message(template="utter_no_document_match")
+            else:
+                dispatcher.utter_message(template="utter_invalid_cpf")
             return {"cpf": None}
+        else:
+            return {"cpf": cpf}
 
     def validate_month(self,
                        value: Text,
@@ -86,9 +90,9 @@ class IssueDuplicateForm(FormAction):
                        tracker: Tracker,
                        domain: Dict[Text, Any]) -> Dict[Text, Any]:
 
-        months = ["janeiro", "fevereiro", "março", 
+        months = ["janeiro", "fevereiro", "março",
                   "abril", "maio", "junho",
-                  "julho", "agosto", "setembro", 
+                  "julho", "agosto", "setembro",
                   "outubro", "novembro", "dezembro"]
 
         matches = difflib.get_close_matches(value.lower(), months)

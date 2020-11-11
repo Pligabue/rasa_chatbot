@@ -80,8 +80,6 @@ class ProvidePowerSupplyInfoForm(FormAction):
                      tracker: Tracker,
                      domain: Dict[Text, Any]) -> Dict[Text, Any]:
 
-        print(f"CEP IS {value}")
-
         cep = re.sub(r"[^\d]", "", value)
 
         if len(cep) == 8:

@@ -44,6 +44,7 @@ users = [User(document=f"0123456789{i}",
               first_name="User",
               last_name=str(i),
               email=f"user{i}@example.com",
+              phone_number=f"1191234567{i}"[0:11],
               address=address)
          for i, address in enumerate(user_addresses)]
 

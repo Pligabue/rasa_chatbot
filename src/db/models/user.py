@@ -14,6 +14,7 @@ class User(Base):
     first_name = Column(String)
     last_name = Column(String)
     email = Column(String)
+    phone_number = Column(String)
 
     bills = relationship("Bill", back_populates="user")
     address = relationship("Address", back_populates="users")
@@ -23,4 +24,5 @@ class User(Base):
 
     def __repr__(self):
         return f"<User(fullname='{self.full_name()}', " \
-               f"document='{self.document}', email='{self.email}')>"
+               f"document='{self.document}', email='{self.email}'), " \
+               f"phone_number={self.phone_number}>"

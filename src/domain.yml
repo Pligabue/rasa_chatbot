@@ -1,13 +1,18 @@
 actions:
+- action_clear_temp_slots
 - respond_faq
 entities:
 - cep
 - cpf
+- email
 - month
+- phone_number
 - year
 forms:
 - issue_duplicate_form
 - provide_power_supply_info_form
+- update_email_form
+- update_phone_number_form
 intents:
 - affirm
 - bye
@@ -17,16 +22,27 @@ intents:
 - get_power_supply_info
 - greet
 - inform
+- request_update
 - thank
+- update_email
+- update_phone_number
 responses:
   utter_anything_else:
   - text: Posso te ajudar em alguma outra coisa?
+  utter_ask_any_more_data:
+  - text: Quer atualizar mais algum dado?
   utter_ask_cep:
   - text: Qual seu CEP?
   utter_ask_cpf:
   - text: Qual seu CPF?
+  utter_ask_email:
+  - text: Qual e-mail gostaria de usar?
   utter_ask_month:
   - text: De que mês?
+  utter_ask_phone_number:
+  - text: Que número de telefone gostaria de usar?
+  utter_ask_which_data:
+  - text: Quer atualizar que dados?
   utter_ask_year:
   - text: De que ano?
   utter_bye:
@@ -79,11 +95,17 @@ slots:
   cpf:
     auto_fill: false
     type: unfeaturized
+  email:
+    auto_fill: false
+    type: unfeaturized
   month:
     auto_fill: false
     type: unfeaturized
   name:
     type: text
+  phone_number:
+    auto_fill: false
+    type: unfeaturized
   year:
     auto_fill: false
     type: unfeaturized

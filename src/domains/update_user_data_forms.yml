@@ -1,0 +1,14 @@
+intents:
+- request_update
+- update_phone_number
+- update_email
+
+forms:
+- update_phone_number_form
+- update_email_form
+
+responses:
+  utter_ask_which_data: 
+  - text: Quer atualizar que dados?
+  utter_ask_any_more_data:
+  - text: Quer atualizar mais algum dado?

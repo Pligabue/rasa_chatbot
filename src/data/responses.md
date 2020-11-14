@@ -1,6 +1,6 @@
 ## faq possibilities
 * faq/ask_possibilities
-  - Eu posso te ajudar a:\n \n1. Saber a situação dos geradores elétricos na sua área\n2. Conferir a situação de uma conta passada\n3. Conferir seus débitos\n3. Informar a central sobre quedas de energia\n4. Restaurar a energia na sua moradia\n5. Responder questões comuns sobre nosso serviço!
+  - Eu posso te ajudar a:\n \n-  Saber a situação dos geradores elétricos na sua área\n-  Conferir a situação de uma conta passada\n-  Conferir seus débitos\n-  Informar a central sobre quedas de energia\n-  Restaurar a energia na sua moradia\n-  Responder questões comuns sobre nosso serviço!\n-  Alterar informações de cadastro (telefone e e-mail).
 
 ## faq contact
 * faq/ask_contact

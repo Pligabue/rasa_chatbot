@@ -20,6 +20,7 @@ intents:
 - faq
 - get_duplicate_bill
 - get_power_supply_info
+- get_started
 - greet
 - inform
 - request_update
@@ -74,6 +75,12 @@ responses:
   - text: Você pagou a conta que iria vencer no dia {date}, no valor de R$ {amount}!
   utter_past_unpaid_bill:
   - text: Você tem uma conta a pagar que venceu no dia {date}, no valor de R$ {amount}!
+  utter_possibilities:
+  - text: "Eu posso te ajudar a:\n \n- Saber a situação dos geradores elétricos\
+      \ na sua área\n- Conferir a situação de uma conta passada\n- Conferir seus\
+      \ débitos\n- Informar a central sobre quedas de energia\n- Restaurar a energia\
+      \ na sua moradia\n- Responder questões comuns sobre nosso serviço!\n \n- Alterar\
+      \ informações de cadastro (telefone e e-mail)."
   utter_power_supply_info:
   - text: O transformador da sua região {status}.
   utter_start_investigations:
@@ -83,6 +90,8 @@ responses:
   - text: Ok!
   utter_team_on_the_way:
   - text: Obrigado pelo alerta! Um time está sendo enviado para corrigir o problema.
+  utter_welcome:
+  - text: Bem vindo!
   utter_youre_welcome:
   - text: Sem problemas!
 session_config:

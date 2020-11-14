@@ -1,4 +1,5 @@
 intents:
+- get_started
 - greet
 - bye
 - thank
@@ -11,6 +12,8 @@ slots:
     type: text
 
 responses:
+  utter_welcome:
+  - text: Bem vindo!
   utter_anything_else:
   - text: Posso te ajudar em alguma outra coisa?
   utter_bye:
@@ -19,6 +22,12 @@ responses:
   - text: Olá! Como posso ajudar?
   utter_youre_welcome:
   - text: Sem problemas!
-
+  utter_possibilities:
+  - text: "Eu posso te ajudar a:\n \n- Saber a situação dos geradores elétricos\
+      \ na sua área\n- Conferir a situação de uma conta passada\n- Conferir seus\
+      \ débitos\n- Informar a central sobre quedas de energia\n- Restaurar a energia\
+      \ na sua moradia\n- Responder questões comuns sobre nosso serviço!\n \n- Alterar\
+      \ informações de cadastro (telefone e e-mail)."
+  
 actions:
 - respond_faq

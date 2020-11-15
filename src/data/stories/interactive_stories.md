@@ -15,6 +15,8 @@
     - slot{"cpf": "01234567890"}
     - form{"name": null}
     - slot{"requested_slot": null}
+    - action_clear_temp_slots
+    - action_clear_temp_slots
     - utter_anything_else
 * deny
     - utter_bye
@@ -38,6 +40,7 @@
     - slot{"cpf": "01234567890"}
     - form{"name": null}
     - slot{"requested_slot": null}
+    - action_clear_temp_slots
     - utter_anything_else
 * deny
     - utter_bye
@@ -54,6 +57,7 @@
     - slot{"cpf": "01234567891"}
     - form{"name": null}
     - slot{"requested_slot": null}
+    - action_clear_temp_slots
     - utter_anything_else
 * deny
     - utter_bye
@@ -71,6 +75,7 @@
     - slot{"cpf": "09876543210"}
     - form{"name": null}
     - slot{"requested_slot": null}
+    - action_clear_temp_slots
     - utter_anything_else
 
 ## interactive_story_1
@@ -88,6 +93,7 @@
     - slot{"year": 2019}
     - form{"name": null}
     - slot{"requested_slot": null}
+    - action_clear_temp_slots
     - utter_anything_else
 
 ## interactive_story_1
@@ -120,4 +126,5 @@
     - slot{"month": 8}
     - form{"name": null}
     - slot{"requested_slot": null}
+    - action_clear_temp_slots
     - utter_anything_else

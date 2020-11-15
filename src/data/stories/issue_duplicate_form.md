@@ -3,4 +3,5 @@
   - issue_duplicate_form
   - form{"name": "issue_duplicate_form"}
   - form{"name": null}
+  - action_clear_temp_slots
   - utter_anything_else

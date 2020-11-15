@@ -1,17 +1,13 @@
-from typing import Dict, Text, Any, List, Union, Optional
+from typing import Dict, Text, Any, List, Union
 import re
-from datetime import datetime
 
 from rasa_sdk import Tracker
-from rasa_sdk.forms import FormAction, REQUESTED_SLOT
+from rasa_sdk.forms import FormAction
 from rasa_sdk.executor import CollectingDispatcher
 
-from db import session, User, PowerSupply, Occurrence, Address
+from db import session, User
 
-from helpers.address_power_supply import get_postal_code_power_supply
-from helpers.occurrence_messages import get_occurrence_messages
-
-from services.dispatch_team import dispatch_team
+import phonenumbers
 
 
 class UpdatePhoneNumberForm(FormAction):
@@ -74,9 +70,13 @@ class UpdatePhoneNumberForm(FormAction):
                      tracker: Tracker,
                      domain: Dict[Text, Any]) -> Dict[Text, Any]:
 
-        phone_number = re.sub(r"[^\d]", "", value)
+        phone_number = "+" + re.sub(r"[^\d]", "", value)
 
-        if re.match(r"^[0-9]{2}9?[0-9]{8}$", phone_number):
+        parsed_number = phonenumbers.parse(phone_number)
+
+        if phonenumbers.is_valid_number(parsed_number):
             return {"phone_number": phone_number}
         else:
+            dispatcher.utter_message(template="utter_invalid_phone_number")
             return {"phone_number": None}
+            

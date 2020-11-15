@@ -41,7 +41,8 @@ responses:
   utter_ask_month:
   - text: De que mês?
   utter_ask_phone_number:
-  - text: Que número de telefone gostaria de usar?
+  - text: Que número de telefone gostaria de usar? Inclua o código de país (55
+      para o Brasil) e o DDD.
   utter_ask_which_data:
   - text: Quer atualizar que dados?
   utter_ask_year:
@@ -60,6 +61,9 @@ responses:
   - text: Este CPF é inválido.
   utter_invalid_month:
   - text: Este mês é inválido.
+  utter_invalid_phone_number:
+  - text: Este número é inválido. Lembre-se de incluir o código de país (55 para
+      o Brasil) e o DDD.
   utter_invalid_year:
   - text: Este ano é inválido.
   utter_no_bills:

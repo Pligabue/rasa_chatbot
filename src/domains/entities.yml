@@ -54,4 +54,6 @@ responses:
   utter_ask_email:
   - text: Qual e-mail gostaria de usar?
   utter_ask_phone_number:
-  - text: Que número de telefone gostaria de usar?
+  - text: Que número de telefone gostaria de usar? Inclua o código de país (55 para o Brasil) e o DDD.
+  utter_invalid_phone_number:
+  - text: Este número é inválido. Lembre-se de incluir o código de país (55 para o Brasil) e o DDD.

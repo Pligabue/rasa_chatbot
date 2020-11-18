@@ -9,6 +9,7 @@ entities:
 - phone_number
 - year
 forms:
+- issue_debt_info_form
 - issue_duplicate_form
 - provide_power_supply_info_form
 - update_email_form
@@ -18,6 +19,7 @@ intents:
 - bye
 - deny
 - faq
+- get_debt_info
 - get_duplicate_bill
 - get_power_supply_info
 - get_started
@@ -49,6 +51,8 @@ responses:
   - text: De que ano?
   utter_bye:
   - text: Até mais!
+  utter_default:
+  - text: Desculpe, não entendi. Pode repetir?
   utter_future_paid_bill:
   - text: Você já pagou a conta que iria vencer no dia {date}, no valor de R$ {amount}!
   utter_future_unpaid_bill:
@@ -68,6 +72,8 @@ responses:
   - text: Este ano é inválido.
   utter_no_bills:
   - text: Você não tem nenhuma conta no sistema!
+  utter_no_debt:
+  - text: Você não tem nenhuma conta não paga!
   utter_no_document_match:
   - text: Não há nenhum registro para este CPF!
   utter_no_power_supply:

@@ -1,0 +1,9 @@
+intents:
+- get_debt_info
+  
+responses:
+  utter_no_debt:
+  - text: Você não tem nenhuma conta não paga!
+
+forms:
+- issue_debt_info_form

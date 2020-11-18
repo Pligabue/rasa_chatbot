@@ -1,4 +1,3 @@
-from db.models import power_supply
 from db import session
 from db import User, Address, Bill, Occurrence, PowerSupply
 

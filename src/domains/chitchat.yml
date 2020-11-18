@@ -12,6 +12,8 @@ slots:
     type: text
 
 responses:
+  utter_default:
+  - text: Desculpe, não entendi. Pode repetir?
   utter_welcome:
   - text: Bem vindo!
   utter_anything_else:

@@ -1,0 +1,19 @@
+## intent:get_debt_info
+- gostaria de informacao de debito
+- quero meu debito
+- quanto eu devo
+- quanto dinheiro eu devo
+- quero saber quanto devo
+- quero saber quanto dinheiro eu devo
+- quanto dinheiro eu devo
+- que ver meu debito
+- gostaria de ver meu debito
+- gotaria de ver quanto eu devo
+- quero ver quanto eu devo
+- quero ver meu debito
+- quero ver quanto dinheiro devo
+- gostaria de ver quanto dinheiro eu devo
+- quanto eu devo
+- quanto dinheiro eu devo
+- informacao de debito
+- informacao de quanto eu devo

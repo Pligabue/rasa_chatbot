@@ -31,7 +31,7 @@ class IssueDuplicateForm(FormAction):
 
         document = tracker.get_slot("cpf")
 
-        user = User.where(User.document == document).one_or_none()
+        user = User.where(User.document == document).first()
 
         if user is None:
             dispatcher.utter_message(template="utter_no_document_match")
@@ -68,7 +68,7 @@ class IssueDuplicateForm(FormAction):
 
         cpf = re.sub(r"[^\d]", "", value)
 
-        user = User.where(User.document == cpf).one_or_none()
+        user = User.where(User.document == cpf).first()
 
         if user is None:
             if len(cpf) == 11:

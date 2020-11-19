@@ -50,8 +50,8 @@ users = [User(document=f"0123456789{i}",
 bills = [Bill(user=user,
               value=round(random.uniform(0.0, 500.0), 2),
               paid=random.random() < 0.5,
-              due_date=date.today()+timedelta(weeks=4*i))
-         for i in range(5)
+              due_date=date.today()-timedelta(weeks=4*i))
+         for i in range(20)
          for user in users]
 
 session.add_all(ps_addresses)

@@ -35,16 +35,14 @@ class IssueDuplicateForm(FormAction):
         month = tracker.get_slot("month")
         year = tracker.get_slot("year")
 
-        user = (session.query(User)
-                .filter(User.document == document)
-                .one_or_none())
+        user = User.where(User.document == document).first()
 
         if user is None:
             dispatcher.utter_message(template="utter_no_document_match")
             return []
 
         bills = [bill for bill in user.bills
-                 if (bill.due_date.month == month and bill.due_date.year)]
+                 if (bill.due_date.month == month and bill.due_date.year == year)]
 
         if not bills:
             dispatcher.utter_message(template="utter_no_bills")
@@ -71,9 +69,7 @@ class IssueDuplicateForm(FormAction):
 
         cpf = re.sub(r"[^\d]", "", value)
 
-        user = (session.query(User)
-                .filter(User.document == cpf)
-                .one_or_none())
+        user = User.where(User.document == cpf).first()
             
         if user is None:
             if len(cpf) == 11:

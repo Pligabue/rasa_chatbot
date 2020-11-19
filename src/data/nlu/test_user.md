@@ -1,0 +1,13 @@
+## intent:get_test_user
+- quero fazer um teste
+- fazer um teste
+- teste
+- testar
+- quero testar
+- quero um teste
+- quero testar
+- vou testar
+- quero um usuario de teste
+- quero um de teste
+- quero teste
+- vou querer testar

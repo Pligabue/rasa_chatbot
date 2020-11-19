@@ -1,5 +1,6 @@
 actions:
 - action_clear_temp_slots
+- action_setup_test_user
 - respond_faq
 entities:
 - cep
@@ -23,6 +24,7 @@ intents:
 - get_duplicate_bill
 - get_power_supply_info
 - get_started
+- get_test_user
 - greet
 - inform
 - request_update
@@ -88,9 +90,9 @@ responses:
   utter_possibilities:
   - text: "Eu posso te ajudar a:\n \n- Saber a situação dos geradores elétricos\
       \ na sua área\n- Conferir a situação de uma conta passada\n- Conferir seus\
-      \ débitos\n- Informar a central sobre quedas de energia\n- Restaurar a energia\
-      \ na sua moradia\n- Responder questões comuns sobre nosso serviço!\n \n- Alterar\
-      \ informações de cadastro (telefone e e-mail)."
+      \ débitos\n- Informar a central sobre quedas de energia\n- Alterar informações\
+      \ de cadastro (telefone e e-mail)\n- Responder questões comuns sobre nosso\
+      \ serviço\n- Realizar um teste com um usuário genérico"
   utter_power_supply_info:
   - text: O transformador da sua região {status}.
   utter_start_investigations:
@@ -102,6 +104,8 @@ responses:
   - text: Obrigado pelo alerta! Um time está sendo enviado para corrigir o problema.
   utter_welcome:
   - text: Bem vindo!
+  utter_what_do_you_want:
+  - text: O que você gostaria de fazer?
   utter_youre_welcome:
   - text: Sem problemas!
 session_config:

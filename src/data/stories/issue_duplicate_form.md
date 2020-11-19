@@ -5,3 +5,4 @@
   - form{"name": null}
   - action_clear_temp_slots
   - utter_anything_else
+  - utter_give_feedback

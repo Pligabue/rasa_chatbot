@@ -9,6 +9,7 @@
 * deny
   - action_clear_temp_slots
   - utter_anything_else
+  - utter_give_feedback
 
 ## request phone number update 2
 * update_phone_number
@@ -19,6 +20,7 @@
 * deny
   - action_clear_temp_slots
   - utter_anything_else
+  - utter_give_feedback
 
 ## request email update 1
 * request_update
@@ -31,6 +33,7 @@
 * deny
   - action_clear_temp_slots
   - utter_anything_else
+  - utter_give_feedback
 
 ## request email update 2
 * update_email
@@ -41,6 +44,7 @@
 * deny
   - action_clear_temp_slots
   - utter_anything_else
+  - utter_give_feedback
 
 ## request email and phone number 
 * request_update
@@ -58,6 +62,7 @@
 * deny
   - action_clear_temp_slots
   - utter_anything_else
+  - utter_give_feedback
 
 ## request email and phone number 1
 * request_update
@@ -75,6 +80,7 @@
 * deny
   - action_clear_temp_slots
   - utter_anything_else
+  - utter_give_feedback
 
 ## request email and phone number 2
 * update_email
@@ -90,6 +96,7 @@
 * deny
   - action_clear_temp_slots
   - utter_anything_else
+  - utter_give_feedback
 
 ## request email and phone number 3
 * update_phone_number
@@ -105,6 +112,7 @@
 * deny
   - action_clear_temp_slots
   - utter_anything_else
+  - utter_give_feedback
 
 ## request email and phone number 4
 * request_update
@@ -124,6 +132,7 @@
 * deny
   - action_clear_temp_slots
   - utter_anything_else
+  - utter_give_feedback
 
 ## request email and phone number 5
 * update_email
@@ -141,6 +150,7 @@
 * deny
   - action_clear_temp_slots
   - utter_anything_else
+  - utter_give_feedback
 
 ## request email and phone number 6
 * update_phone_number
@@ -158,3 +168,4 @@
 * deny
   - action_clear_temp_slots
   - utter_anything_else
+  - utter_give_feedback

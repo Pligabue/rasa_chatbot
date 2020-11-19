@@ -18,6 +18,7 @@
     - action_clear_temp_slots
     - action_clear_temp_slots
     - utter_anything_else
+    - utter_give_feedback
 * deny
     - utter_bye
 * bye
@@ -42,6 +43,7 @@
     - slot{"requested_slot": null}
     - action_clear_temp_slots
     - utter_anything_else
+    - utter_give_feedback
 * deny
     - utter_bye
 
@@ -59,6 +61,7 @@
     - slot{"requested_slot": null}
     - action_clear_temp_slots
     - utter_anything_else
+    - utter_give_feedback
 * deny
     - utter_bye
 * bye
@@ -77,6 +80,7 @@
     - slot{"requested_slot": null}
     - action_clear_temp_slots
     - utter_anything_else
+    - utter_give_feedback
 
 ## interactive_story_1
 * get_duplicate_bill{"month": "junho"}
@@ -95,6 +99,7 @@
     - slot{"requested_slot": null}
     - action_clear_temp_slots
     - utter_anything_else
+    - utter_give_feedback
 
 ## interactive_story_1
 * get_duplicate_bill{"month": "outubro", "year": "2020"}
@@ -128,3 +133,23 @@
     - slot{"requested_slot": null}
     - action_clear_temp_slots
     - utter_anything_else
+    - utter_give_feedback
+
+## interactive_story_1
+* get_power_outage_information
+    - provide_power_supply_info_form
+    - form{"name": "provide_power_supply_info_form"}
+    - slot{"supplying_info": false}
+    - slot{"requested_slot": "cep"}
+* form: inform{"cep": "02308201"}
+    - form: provide_power_supply_info_form
+    - slot{"cep": "02308201"}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - action_clear_temp_slots
+    - slot{"month": null}
+    - slot{"year": null}
+    - slot{"phone_number": null}
+    - slot{"email": null}
+    - utter_anything_else
+    - utter_give_feedback

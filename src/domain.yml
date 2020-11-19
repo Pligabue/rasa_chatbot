@@ -59,6 +59,8 @@ responses:
   - text: Você já pagou a conta que iria vencer no dia {date}, no valor de R$ {amount}!
   utter_future_unpaid_bill:
   - text: Você tem uma conta para ser paga até o dia {date}, no valor de R$ {amount}!
+  utter_give_feedback:
+  - text: Dê seu feedback acessando https://forms.gle/3X5ufm5YG5WLz4k86
   utter_greet:
   - text: Olá! Como posso ajudar?
   utter_invalid_cep:

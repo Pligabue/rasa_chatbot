@@ -27,6 +27,8 @@ responses:
   - text: Olá! Como posso ajudar?
   utter_youre_welcome:
   - text: Sem problemas!
+  utter_give_feedback:
+  - text: Dê seu feedback acessando https://forms.gle/3X5ufm5YG5WLz4k86 
   utter_possibilities:
   - text: "Eu posso te ajudar a:\n \n- Saber a situação dos geradores elétricos\
       \ na sua área\n- Conferir a situação de uma conta passada\n- Conferir seus\

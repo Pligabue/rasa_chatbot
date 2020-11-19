@@ -8,6 +8,7 @@ entities:
 - email
 - month
 - phone_number
+- supplying_info
 - year
 forms:
 - issue_debt_info_form
@@ -22,12 +23,13 @@ intents:
 - faq
 - get_debt_info
 - get_duplicate_bill
-- get_power_supply_info
+- get_power_outage_information
 - get_started
 - get_test_user
 - greet
 - inform
 - request_update
+- supply_power_outage_information
 - thank
 - update_email
 - update_phone_number
@@ -129,6 +131,9 @@ slots:
   name:
     type: text
   phone_number:
+    auto_fill: false
+    type: unfeaturized
+  supplying_info:
     auto_fill: false
     type: unfeaturized
   year:

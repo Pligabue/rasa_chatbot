@@ -21,11 +21,19 @@ class ProvidePowerSupplyInfoForm(FormAction):
 
     @staticmethod
     def required_slots(tracker: Tracker) -> List[Text]:
-        return ["cep"]
+        return ["cep", "supplying_info"]
 
     def slot_mappings(self) -> Dict[Text, Union[Dict, List[Dict]]]:
         return {
-            "cep": [self.from_entity(entity="cep", intent="inform")]
+            "cep": [self.from_entity(entity="cep", intent="inform")],
+            "supplying_info": [
+                self.from_trigger_intent(
+                    intent="supply_power_outage_information",
+                    value=True),
+                self.from_trigger_intent(
+                    intent="get_power_outage_information",
+                    value=False)
+            ]
         }
 
     def submit(self,
@@ -34,11 +42,12 @@ class ProvidePowerSupplyInfoForm(FormAction):
                domain: Dict[Text, Any]) -> List[Dict]:
 
         cep = tracker.get_slot("cep")
+        supplying_info = tracker.get_slot("supplying_info")
         power_supply = get_postal_code_power_supply(cep)
 
         if power_supply is None:
             dispatcher.utter_message(template="utter_no_power_supply")
-
+            
         elif power_supply.is_down():
             occurrence = power_supply.occurrences.first()
             dispatcher.utter_message(
@@ -54,24 +63,31 @@ class ProvidePowerSupplyInfoForm(FormAction):
                 additional_comments=messages["additional_comments"])
 
         elif power_supply.is_up():
-            occurrence = Occurrence(power_supply=power_supply,
-                                    category="power_outage",
-                                    status="pending",
-                                    start_time=datetime.now())
+            if supplying_info:
+                occurrence = Occurrence(power_supply=power_supply,
+                                        category="power_outage",
+                                        status="pending",
+                                        start_time=datetime.now())
 
-            power_supply.status = "pending"
-            session.add(occurrence)
-            session.commit()
-            dispatcher.utter_message(template="utter_start_investigations")
+                power_supply.status = "pending"
+                session.add(occurrence)
+                session.commit()
+                dispatcher.utter_message(template="utter_start_investigations")
+            else:
+                dispatcher.utter_message(
+                    text="A enegia na sua região está funcionando normalmente.")
 
         elif power_supply.is_pending():
-            occurrence = power_supply.occurrences.first()
-            occurrence.status = "in_progress"
-            power_supply.status = "down"
-            session.commit()
-            dispatch_team(occurrence)
-            dispatcher.utter_message(template="utter_team_on_the_way")
-
+            if supplying_info:
+                occurrence = power_supply.occurrences.first()
+                occurrence.status = "in_progress"
+                power_supply.status = "down"
+                session.commit()
+                dispatch_team(occurrence)
+                dispatcher.utter_message(template="utter_team_on_the_way")
+            else:
+                dispatcher.utter_message(
+                    text="Estamos verificando a situação na sua região. Por favor, aguarde mais desenvolvimentos.")
         return []
 
     def validate_cep(self,

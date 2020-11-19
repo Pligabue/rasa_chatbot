@@ -1,6 +1,4 @@
-## intent:get_power_supply_info
-- gostaria de informações sobre a energia
-- gostaria de informações sobre a eletricidade
+## intent:supply_power_outage_information
 - houve uma queda de energia
 - houve uma queda de eletricidade
 - houve um problema na distribuição de energia
@@ -36,3 +34,18 @@
 - meu quarteirão está sem energia
 - meu quarteirão está sem eletricidade
 - meu quarteirao está sem luz
+
+## intent:get_power_outage_information
+- gostaria de informações sobre a energia
+- gostaria de informações sobre a eletricidade
+- informações sobre energia
+- como esta a energia aqui
+- energia na minha area
+- como esta o conserto
+- informacoes sobre a energia
+- informacoes sobre a luz
+- informacoes sobre a eletricidade
+- informacoes sobre meu bairro
+- informacoes sobre a minha area
+- informacoes sobre a minha regiao
+- informacoes sobre o meu quarteirao

@@ -8,6 +8,7 @@ entities:
 - cep
 - email
 - phone_number
+- supplying_info
 
 actions:
 - action_clear_temp_slots
@@ -30,6 +31,9 @@ slots:
     auto_fill: false
     type: unfeaturized
   phone_number:
+    auto_fill: false
+    type: unfeaturized
+  supplying_info:
     auto_fill: false
     type: unfeaturized
 

@@ -1,5 +1,6 @@
 intents:
-- get_power_supply_info
+- supply_power_outage_information
+- get_power_outage_information
 
 forms:
 - provide_power_supply_info_form

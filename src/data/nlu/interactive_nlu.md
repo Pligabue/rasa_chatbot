@@ -14,8 +14,8 @@
 - [01234567892](cpf)
 - [2019](year)
 - [98765432105](cpf)
-- [01234567892](cpf)
 - [agosto](month) de [2019](year)
+- [02308201](cep)
 
 ## intent:deny
 - não, tchau
@@ -23,3 +23,6 @@
 
 ## intent:bye
 - tchau
+
+## intent:get_power_outage_information
+- como esta a energia na minha regiao

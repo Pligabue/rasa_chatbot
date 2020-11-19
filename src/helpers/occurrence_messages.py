@@ -3,6 +3,13 @@ def get_hours_util_estimation(occurrence):
 
 
 def get_occurrence_messages(occurrence):
+    if occurrence is None:
+        return {
+            "category": "Um problema",
+            "status": "ocorreu",
+            "estimation": "Ainda não há previsão de conclusão",
+            "additional_comments": ""
+        }
     return {
         "category": ("Uma manutenção"
                      if occurrence.category_is("maintenance")

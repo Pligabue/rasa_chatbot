@@ -7,7 +7,8 @@ from rasa_sdk.executor import CollectingDispatcher
 
 from db import session, User
 
-import phonenumbers
+from phonenumbers import parse, is_valid_number, format_number
+from phonenumbers import phonenumberutil, PhoneNumberFormat
 
 
 class UpdatePhoneNumberForm(FormAction):
@@ -29,18 +30,16 @@ class UpdatePhoneNumberForm(FormAction):
                dispatcher: CollectingDispatcher,
                tracker: Tracker,
                domain: Dict[Text, Any]) -> List[Dict]:
-        
+
         cpf = tracker.get_slot("cpf")
         phone_number = tracker.get_slot("phone_number")
 
-        user = (session.query(User)
-                .filter(User.document == cpf)
-                .one_or_none())
+        user = User.where(User.document == cpf).first()
 
         user.phone_number = phone_number
 
         session.commit()
-        
+
         return []
 
     def validate_cpf(self,
@@ -51,10 +50,8 @@ class UpdatePhoneNumberForm(FormAction):
 
         cpf = re.sub(r"[^\d]", "", value)
 
-        user = (session.query(User)
-                .filter(User.document == cpf)
-                .one_or_none())
-            
+        user = User.where(User.document == cpf).first()
+
         if user is None:
             if len(cpf) == 11:
                 dispatcher.utter_message(template="utter_no_document_match")
@@ -65,18 +62,33 @@ class UpdatePhoneNumberForm(FormAction):
             return {"cpf": cpf}
 
     def validate_phone_number(self,
-                     value: Text,
-                     dispatcher: CollectingDispatcher,
-                     tracker: Tracker,
-                     domain: Dict[Text, Any]) -> Dict[Text, Any]:
+                              value: Text,
+                              dispatcher: CollectingDispatcher,
+                              tracker: Tracker,
+                              domain: Dict[Text, Any]) -> Dict[Text, Any]:
 
-        phone_number = "+" + re.sub(r"[^\d]", "", value)
+        striped_phone_number = re.sub(r"[^\d]", "", value)
+        phone_number = "+" + striped_phone_number
 
-        parsed_number = phonenumbers.parse(phone_number)
+        try:
+            cpf = tracker.get_slot("cpf")
+            user = User.where(User.document == cpf).first()
+            parsed_current_number = parse("+" + user.phone_number)
+            formatted_current_number = format_number(
+                    parsed_current_number, PhoneNumberFormat.INTERNATIONAL)
+        except phonenumberutil.NumberParseException:
+            formatted_current_number = ""
 
-        if phonenumbers.is_valid_number(parsed_number):
-            return {"phone_number": phone_number}
-        else:
+        try:
+            parsed_number = parse(phone_number)
+            if is_valid_number(parsed_number):
+                formatted_new_number = format_number(parsed_number, PhoneNumberFormat.INTERNATIONAL)
+                dispatcher.utter_message(
+                    text=f"Seu telefone atual {formatted_current_number} será trocado por {formatted_new_number}")
+                return {"phone_number": striped_phone_number}
+        except phonenumberutil.NumberParseException:
             dispatcher.utter_message(template="utter_invalid_phone_number")
             return {"phone_number": None}
             
+        dispatcher.utter_message(template="utter_invalid_phone_number")
+        return {"phone_number": None}

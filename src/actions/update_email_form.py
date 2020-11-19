@@ -1,17 +1,11 @@
-from typing import Dict, Text, Any, List, Union, Optional
+from typing import Dict, Text, Any, List, Union
 import re
-from datetime import datetime
 
 from rasa_sdk import Tracker
-from rasa_sdk.forms import FormAction, REQUESTED_SLOT
+from rasa_sdk.forms import FormAction
 from rasa_sdk.executor import CollectingDispatcher
 
-from db import session, User, PowerSupply, Occurrence, Address
-
-from helpers.address_power_supply import get_postal_code_power_supply
-from helpers.occurrence_messages import get_occurrence_messages
-
-from services.dispatch_team import dispatch_team
+from db import session, User
 
 
 class UpdateEmailForm(FormAction):
@@ -33,18 +27,16 @@ class UpdateEmailForm(FormAction):
                dispatcher: CollectingDispatcher,
                tracker: Tracker,
                domain: Dict[Text, Any]) -> List[Dict]:
-        
+
         cpf = tracker.get_slot("cpf")
         email = tracker.get_slot("email")
 
-        user = (session.query(User)
-                .filter(User.document == cpf)
-                .one_or_none())
+        user = User.where(User.document == cpf).first()
 
         user.email = email
-        
+
         session.commit()
-        
+
         return []
 
     def validate_cpf(self,
@@ -55,10 +47,8 @@ class UpdateEmailForm(FormAction):
 
         cpf = re.sub(r"[^\d]", "", value)
 
-        user = (session.query(User)
-                .filter(User.document == cpf)
-                .one_or_none())
-            
+        user = User.where(User.document == cpf).first()
+
         if user is None:
             if len(cpf) == 11:
                 dispatcher.utter_message(template="utter_no_document_match")
@@ -69,14 +59,23 @@ class UpdateEmailForm(FormAction):
             return {"cpf": cpf}
 
     def validate_email(self,
-                     value: Text,
-                     dispatcher: CollectingDispatcher,
-                     tracker: Tracker,
-                     domain: Dict[Text, Any]) -> Dict[Text, Any]:
+                       value: Text,
+                       dispatcher: CollectingDispatcher,
+                       tracker: Tracker,
+                       domain: Dict[Text, Any]) -> Dict[Text, Any]:
 
         email = re.sub(r"[^a-zA-Z@\.]", "", value)
 
+        cpf = tracker.get_slot("cpf")
+        user = User.where(User.document == cpf).first()
+        if user is None:
+            current_email = ""
+        else:
+            current_email = user.email
+
         if re.match(r"^.+@.+\..+$", email):
+            dispatcher.utter_message(text=f"Seu email atual {current_email} será trocado por {email}")
             return {"email": email}
         else:
+            dispatcher.utter_message(template="utter_invalid_email")
             return {"email": None}

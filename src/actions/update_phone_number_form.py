@@ -70,25 +70,25 @@ class UpdatePhoneNumberForm(FormAction):
         striped_phone_number = re.sub(r"[^\d]", "", value)
         phone_number = "+" + striped_phone_number
 
-        try:
-            cpf = tracker.get_slot("cpf")
-            user = User.where(User.document == cpf).first()
-            parsed_current_number = parse("+" + user.phone_number)
-            formatted_current_number = format_number(
-                    parsed_current_number, PhoneNumberFormat.INTERNATIONAL)
-        except phonenumberutil.NumberParseException:
-            formatted_current_number = ""
+        cpf = tracker.get_slot("cpf")
+        user = User.where(User.document == cpf).first()
+        formatted_current_number = ""
+        if user is not None:
+            try:
+                parsed_current_number = parse("+" + user.phone_number)
+                formatted_current_number = " " + format_number(parsed_current_number, PhoneNumberFormat.INTERNATIONAL)
+            except phonenumberutil.NumberParseException:
+                pass
 
         try:
             parsed_number = parse(phone_number)
             if is_valid_number(parsed_number):
-                formatted_new_number = format_number(parsed_number, PhoneNumberFormat.INTERNATIONAL)
+                formatted_new_number = format_number(parsed_number, PhoneNumberFormat.INTERNATIONAL)  
                 dispatcher.utter_message(
-                    text=f"Seu telefone atual {formatted_current_number} será trocado por {formatted_new_number}")
+                    text=f"Seu telefone atual{formatted_current_number} será trocado por {formatted_new_number}")
                 return {"phone_number": striped_phone_number}
         except phonenumberutil.NumberParseException:
-            dispatcher.utter_message(template="utter_invalid_phone_number")
-            return {"phone_number": None}
+            pass
             
         dispatcher.utter_message(template="utter_invalid_phone_number")
         return {"phone_number": None}

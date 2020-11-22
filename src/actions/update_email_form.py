@@ -68,13 +68,12 @@ class UpdateEmailForm(FormAction):
 
         cpf = tracker.get_slot("cpf")
         user = User.where(User.document == cpf).first()
-        if user is None:
-            current_email = ""
-        else:
-            current_email = user.email
+        current_email = ""
+        if user is not None:
+            current_email = " " + user.email
 
         if re.match(r"^.+@.+\..+$", email):
-            dispatcher.utter_message(text=f"Seu email atual {current_email} será trocado por {email}")
+            dispatcher.utter_message(text=f"Seu email atual{current_email} será trocado por {email}")
             return {"email": email}
         else:
             dispatcher.utter_message(template="utter_invalid_email")

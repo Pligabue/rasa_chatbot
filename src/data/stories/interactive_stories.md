@@ -153,3 +153,46 @@
     - slot{"email": null}
     - utter_anything_else
     - utter_give_feedback
+
+## interactive_story_1
+* get_power_outage_information
+    - provide_power_supply_info_form
+    - form{"name": "provide_power_supply_info_form"}
+    - slot{"supplying_info": false}
+    - slot{"requested_slot": "cep"}
+* form: inform{"cep": "02807100"}
+    - form: provide_power_supply_info_form
+    - slot{"cep": "02807100"}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - action_clear_temp_slots
+    - slot{"month": null}
+    - slot{"year": null}
+    - slot{"phone_number": null}
+    - slot{"email": null}
+    - slot{"cep": null}
+    - utter_anything_else
+    - utter_give_feedback
+* update_phone_number
+    - update_phone_number_form
+    - form{"name": "update_phone_number_form"}
+    - slot{"requested_slot": "cpf"}
+* form: inform{"cpf": "66243987905"}
+    - form: update_phone_number_form
+    - slot{"cpf": "66243987905"}
+    - slot{"requested_slot": "phone_number"}
+* form: inform{"phone_number": "+55 (11) 95375-5714"}
+    - form: update_phone_number_form
+    - slot{"phone_number": "5511953755714"}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - utter_ask_any_more_data
+* deny
+    - action_clear_temp_slots
+    - slot{"month": null}
+    - slot{"year": null}
+    - slot{"phone_number": null}
+    - slot{"email": null}
+    - slot{"cep": null}
+    - utter_anything_else
+    - utter_give_feedback

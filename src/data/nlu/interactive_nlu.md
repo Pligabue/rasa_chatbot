@@ -16,13 +16,21 @@
 - [98765432105](cpf)
 - [agosto](month) de [2019](year)
 - [02308201](cep)
+- [02807100](cep)
+- [66243987905](cpf)
+- [+55 \(11\) 95375-5714](phone_number)
 
 ## intent:deny
 - não, tchau
 - nao obrigado
+- no
 
 ## intent:bye
 - tchau
 
 ## intent:get_power_outage_information
 - como esta a energia na minha regiao
+- como esta a situaçao da luz
+
+## intent:update_phone_number
+- quero mudar o celular

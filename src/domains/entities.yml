@@ -58,7 +58,9 @@ responses:
   - text: Este ano é inválido.
   utter_ask_email:
   - text: Qual e-mail gostaria de usar?
+  utter_invalid_email:
+  - text: Este e-mail é inválido. Qual é o seu e-mail?
   utter_ask_phone_number:
   - text: Que número de telefone gostaria de usar? Inclua o código de país (55 para o Brasil) e o DDD.
   utter_invalid_phone_number:
-  - text: Este número é inválido. Lembre-se de incluir o código de país (55 para o Brasil) e o DDD.
+  - text: Este telefone é inválido. Lembre-se de incluir o código de país (55 para o Brasil) e o DDD.

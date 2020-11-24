@@ -49,11 +49,21 @@ def generate_test_user():
                                       if power_supply.is_up() else None),
                             estimated_end_time=(datetime.now()-timedelta(hours=1) if random() < 0.5 else None))
 
+    today = date.today()
+    day = today.day
+    month = today.month
+    year = today.year
+    due_dates = []
+    for i in range(24):
+        month = month-1 if month > 1 else 12
+        year = year-1 if month == 12 else year
+        due_dates.append(datetime.strptime(f"{day}-{month}-{year}", "%d-%m-%Y").date())
+
     bills = [Bill(user=user,
                   value=round(uniform(0.0, 500.0), 2),
                   paid=random() < 0.5,
-                  due_date=date.today()-timedelta(weeks=4*i))
-             for i in range(20)]
+                  due_date=due_date)
+             for due_date in due_dates]
 
     power_supply.address = address
     user.address = address
@@ -65,7 +75,7 @@ def generate_test_user():
     session.add_all(bills)
 
     session.commit()
-
+    
     return {
         "cpf": generated_cpf,
         "cep": generated_cep,

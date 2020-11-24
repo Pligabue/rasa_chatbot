@@ -69,11 +69,13 @@ responses:
   - text: Este CEP é inválido.
   utter_invalid_cpf:
   - text: Este CPF é inválido.
+  utter_invalid_email:
+  - text: Este e-mail é inválido. Qual é o seu e-mail?
   utter_invalid_month:
   - text: Este mês é inválido.
   utter_invalid_phone_number:
-  - text: Este número é inválido. Lembre-se de incluir o código de país (55 para
-      o Brasil) e o DDD.
+  - text: Este telefone é inválido. Lembre-se de incluir o código de país (55
+      para o Brasil) e o DDD.
   utter_invalid_year:
   - text: Este ano é inválido.
   utter_no_bills:

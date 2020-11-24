@@ -196,3 +196,14 @@
     - slot{"cep": null}
     - utter_anything_else
     - utter_give_feedback
+
+## interactive_story_1
+* get_power_outage_information
+    - provide_power_supply_info_form
+    - form{"name": "provide_power_supply_info_form"}
+    - slot{"supplying_info": false}
+    - slot{"requested_slot": "cep"}
+* form: inform{"cep": "07607 60"}
+    - form: provide_power_supply_info_form
+    - slot{"cep": null}
+    - slot{"requested_slot": "cep"}

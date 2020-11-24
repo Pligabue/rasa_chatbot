@@ -19,6 +19,7 @@
 - [02807100](cep)
 - [66243987905](cpf)
 - [+55 \(11\) 95375-5714](phone_number)
+- [07607 060](cep)
 
 ## intent:deny
 - não, tchau
@@ -31,6 +32,7 @@
 ## intent:get_power_outage_information
 - como esta a energia na minha regiao
 - como esta a situaçao da luz
+- gostaria de saber se minha rua esta sem energia
 
 ## intent:update_phone_number
 - quero mudar o celular

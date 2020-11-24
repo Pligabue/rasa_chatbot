@@ -9,14 +9,18 @@ def get_address_power_supply(address):
                  Address.state == address.state,
                  Address.city == address.city,
                  Address.neighbourhood == address.neighbourhood)\
-         .one_or_none()
+         .first()
 
     return ps
 
 
-def get_postal_code_power_supply(postal_code):
-    address = build_address(postal_code)
-    return get_address_power_supply(address)
+def get_power_supply_by_postal_code(postal_code):
+    ps = session.query(PowerSupply)\
+         .join(PowerSupply.address)\
+         .filter(Address.postal_code == postal_code)\
+         .first()
+
+    return ps
 
 
 def get_user_power_supply(user):

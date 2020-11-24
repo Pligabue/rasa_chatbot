@@ -79,6 +79,6 @@ def generate_test_user():
     return {
         "cpf": generated_cpf,
         "cep": generated_cep,
-        "oldest_bill": date.today()-timedelta(weeks=4*19),
-        "most_recent_bill": date.today()
+        "oldest_bill": due_dates[-1],
+        "most_recent_bill": due_dates[0]
     }

@@ -8,7 +8,7 @@ from rasa_sdk.executor import CollectingDispatcher
 
 from db import session, User, PowerSupply, Occurrence, Address
 
-from helpers.address_power_supply import get_postal_code_power_supply
+from helpers.address_power_supply import get_power_supply_by_postal_code
 from helpers.occurrence_messages import get_occurrence_messages
 
 from services.dispatch_team import dispatch_team
@@ -43,7 +43,7 @@ class ProvidePowerSupplyInfoForm(FormAction):
 
         cep = tracker.get_slot("cep")
         supplying_info = tracker.get_slot("supplying_info")
-        power_supply = get_postal_code_power_supply(cep)
+        power_supply = get_power_supply_by_postal_code(cep)
 
         if power_supply is None:
             dispatcher.utter_message(template="utter_no_power_supply")

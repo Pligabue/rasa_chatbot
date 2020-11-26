@@ -47,3 +47,4 @@
 - tecnologias
 - tecnologias utilizadas
 - quais as tecnologias
+- que tecnologias voces usam?

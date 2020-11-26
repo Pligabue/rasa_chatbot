@@ -166,3 +166,33 @@
     - utter_unexpected_year
     - update_email_form
     - slot{"requested_slot": "cpf"}
+
+## interactive_story_11
+* update_phone_number
+    - update_phone_number_form
+    - form{"name": "update_phone_number_form"}
+    - slot{"requested_slot": "cpf"}
+* faq
+    - form{"name": null}
+    - respond_faq
+    - utter_anything_else
+
+## interactive_story_12
+* update_email
+    - update_email_form
+    - form{"name": "update_email_form"}
+    - slot{"requested_slot": "cpf"}
+* faq
+    - form{"name": null}
+    - respond_faq
+    - utter_anything_else
+
+## interactive_story_13
+* get_duplicate_bill
+    - issue_duplicate_form
+    - form{"name": "issue_duplicate_form"}
+    - slot{"requested_slot": "cpf"}
+* faq
+    - form{"name": null}
+    - respond_faq
+    - utter_anything_else

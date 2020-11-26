@@ -47,6 +47,7 @@
 ## intent:update_phone_number
 - quero mudar o celular
 - quero trocar telefone
+- trocar telefone
 
 ## intent:update_email
 - quero trocar email

@@ -25,10 +25,9 @@
 - [55 11 953755714](phone_number)
 - [48396334870](cpf)
 - [78945651](cep)
-- [01234567892](cpf)
-- [48396334870](cpf)
 - [04537090](cep)
 - [2018](year)
+- [março](month)
 
 ## intent:deny
 - não, tchau
@@ -48,3 +47,6 @@
 ## intent:update_phone_number
 - quero mudar o celular
 - quero trocar telefone
+
+## intent:update_email
+- quero trocar email

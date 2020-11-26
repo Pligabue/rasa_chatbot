@@ -106,7 +106,8 @@
     - utter_unexpected_cep
     - issue_duplicate_form
     - slot{"requested_slot": "cpf"}
-## interactive_story_1
+
+## interactive_story_8
 * get_duplicate_bill{"month": "março"}
     - issue_duplicate_form
     - form{"name": "issue_duplicate_form"}
@@ -145,3 +146,23 @@
     - slot{"cep": null}
     - utter_anything_else
     - utter_give_feedback
+
+## interactive_story_9
+* update_email
+    - update_email_form
+    - form{"name": "update_email_form"}
+    - slot{"requested_slot": "cpf"}
+* inform{"month": "março"}
+    - utter_unexpected_month
+    - update_email_form
+    - slot{"requested_slot": "cpf"}
+
+## interactive_story_10
+* update_email
+    - update_email_form
+    - form{"name": "update_email_form"}
+    - slot{"requested_slot": "cpf"}
+* inform{"year": "2020"}
+    - utter_unexpected_year
+    - update_email_form
+    - slot{"requested_slot": "cpf"}

@@ -5,6 +5,7 @@
 - conta de [junho](month)
 - conta de [outubro](month) de [2020](year)
 - segunda via
+- conta de [março](month)
 
 ## intent:inform
 - [01234657898](cpf)
@@ -20,11 +21,20 @@
 - [66243987905](cpf)
 - [+55 \(11\) 95375-5714](phone_number)
 - [07607 060](cep)
+- [04537070](cep)
+- [55 11 953755714](phone_number)
+- [48396334870](cpf)
+- [78945651](cep)
+- [01234567892](cpf)
+- [48396334870](cpf)
+- [04537090](cep)
+- [2018](year)
 
 ## intent:deny
 - não, tchau
 - nao obrigado
 - no
+- nao
 
 ## intent:bye
 - tchau
@@ -33,6 +43,8 @@
 - como esta a energia na minha regiao
 - como esta a situaçao da luz
 - gostaria de saber se minha rua esta sem energia
+- quero informações sobre a minha regia
 
 ## intent:update_phone_number
 - quero mudar o celular
+- quero trocar telefone

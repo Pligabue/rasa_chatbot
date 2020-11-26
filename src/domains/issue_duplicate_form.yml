@@ -13,7 +13,7 @@ responses:
   utter_future_unpaid_bill:
   - text: Você tem uma conta para ser paga até o dia {date}, no valor de R$ {amount}!
   utter_no_bills:
-  - text: Você não tem nenhuma conta no sistema!
+  - text: Você não tem nenhuma conta neste mês!
   
 forms:
 - issue_duplicate_form

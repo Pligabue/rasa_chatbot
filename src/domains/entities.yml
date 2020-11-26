@@ -64,3 +64,15 @@ responses:
   - text: Que número de telefone gostaria de usar? Inclua o código de país (55 para o Brasil) e o DDD.
   utter_invalid_phone_number:
   - text: Este telefone é inválido. Lembre-se de incluir o código de país (55 para o Brasil) e o DDD.
+  utter_unexpected_cep:
+  - text: Identifiquei um CEP inesperado na sua mensagem.
+  utter_unexpected_cpf:
+  - text: Identifiquei um CPF inesperado na sua mensagem.
+  utter_unexpected_phone_number:
+  - text: Identifiquei um número de telefone inesperado na sua mensagem.
+  utter_unexpected_email:
+  - text: Identifiquei um e-mail inesperado na sua mensagem.
+  utter_unexpected_month:
+  - text: Identifiquei um mês inesperado na sua mensagem.
+  utter_unexpected_year:
+  - text: Identifiquei um ano inesperado na sua mensagem.

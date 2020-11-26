@@ -79,7 +79,7 @@ responses:
   utter_invalid_year:
   - text: Este ano é inválido.
   utter_no_bills:
-  - text: Você não tem nenhuma conta no sistema!
+  - text: Você não tem nenhuma conta neste mês!
   utter_no_debt:
   - text: Você não tem nenhuma conta não paga!
   utter_no_document_match:
@@ -108,6 +108,18 @@ responses:
   - text: Ok!
   utter_team_on_the_way:
   - text: Obrigado pelo alerta! Um time está sendo enviado para corrigir o problema.
+  utter_unexpected_cep:
+  - text: Identifiquei um CEP inesperado na sua mensagem.
+  utter_unexpected_cpf:
+  - text: Identifiquei um CPF inesperado na sua mensagem.
+  utter_unexpected_email:
+  - text: Identifiquei um e-mail inesperado na sua mensagem.
+  utter_unexpected_month:
+  - text: Identifiquei um mês inesperado na sua mensagem.
+  utter_unexpected_phone_number:
+  - text: Identifiquei um número de telefone inesperado na sua mensagem.
+  utter_unexpected_year:
+  - text: Identifiquei um ano inesperado na sua mensagem.
   utter_welcome:
   - text: Bem vindo!
   utter_what_do_you_want:

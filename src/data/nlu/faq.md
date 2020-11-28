@@ -1,50 +1,193 @@
 ## intent: faq/ask_possibilities
-- o que voce pode fazer
-- o que voce sabe fazer
-- o que voce faz
 - ajuda
+- cita exemplos do que vc faz
+- cita exemplos do que vc sabe fazer
+- como vc pode me ajudar?
+- como voce pode me ajudar?
+- como você pode me ajudar?
+- doc
+- dá as opções
+- dá um exemplo do que vc faz
+- funcionalidades
+- funcoes
+- funcs
+- funções
+- h
+- help
+- list func
+- list funções
+- lista
+- lista de ajuda
+- lista de funcionalidades
+- lista de funções
+- lista funções
 - me ajuda
 - me ajude
-- lista de funcionalidades
-- lista de ajuda
-- como voce pode me ajudar
+- me cita exemplos do que você faz
+- me dá a lista de possibilidades
+- me dá as opts
+- me dá as opções
+- me dá opt
+- me dá opts
+- me fala como você pode me ajudar
+- me fala o q vc faz
+- me fala o que vc faz
+- me fala o que você faz
+- me fala o que você pode fazer
+- me fala oq vc faz
+- me fala um exemplo do que você faz
+- o q vc sabe fazer?
+- o que vc faz de útil?
+- o que vc faz?
+- o que vc pode fazer?
+- o que vc sabe fazer?
+- o que vc tem de útil?
+- o que voce faz?
+- o que voce pode fazer?
+- o que voce sabe fazer?
+- opções
+- oq vc faz?
+- oq vc saber fazer?
 - possibilidades
-- funcoes
-- funcionalidades
-- funções
+- possibilities
+- vc sabe fazer o que?
+- você sabe fazer o que?
 
 ## intent: faq/ask_contact
-- entrar em contacto com a empresa
-- se tiver uma dúvida, como posso entrar em contacto com vocês?
+- cmo posso falar com a empresa?
+- como dá pra falar com vcs?
 - como entro em contato?
-- qual o contato
-- qual o contacto 
-- contato
+- como posso falar com a empresa?
+- como posso falar com vcs?
+- como posso falar com vocês?
+- como posso flar com a empresa?
 - contacto
+- contato
+- dá pra falar com a empresa?
+- dá pra falar com vocês?
+- entrar em contacto com a empresa
+- eu gostaria de entrar em contato
+- eu gostaria de entrar em contato com a empresa
+- eu gostaria de falar com a empresa
+- existe algum modo de entrar em contato com a empresa?
+- existe algum modo de falar com vocês?
+- existe alguma maneira de entrar em contato com a empresa?
+- existe alguma maneira de falar com vcs?
+- posso entrar em contato com vocês?
+- posso entrar em contato?
+- posso falar com a empresa?
+- qual o contacto?
+- qual o contato?
+- se tiver uma dúvida, como posso entrar em contacto com vocês?
+- tem como falar com vcs?
 
 ## intent: faq/ask_project
-- sobre o que é o projeto
-- sobre o projeto
-- que projeto é esse
-- o que é o projeto
+- explica o projeto
+- fala sobre o projeto
 - fale me mais sobre o projeto
+- gostaria de informações sobre o projeto
+- info sobre o projeto
+- informação sobre o projeto
+- me explica o projeto
+- me fala sobre o projeto
+- o projeto faz o que?
+- o que faz o projeto?
+- o que é o projeto?
+- oq é o projeto?
+- por que esse projeto foi feito?
+- por que este projeto foi desenvolvido?
+- pq vcs fizeram o projeto?
+- qual o motivo do projeto?
+- qual é a razão deste projeto?
+- qual é o motivo desse projeto?
+- qual é o projeto?
+- que projeto é esse?
+- sobre o projeto
+- sobre o que é esse projeto?
+- sobre o que é este projeto?
+- sobre o que é o projeto
 
 ## intent: faq/ask_students
-- quem sao os alunos do projeto
-- quem sao os estudantes do projeto
-- quem sao os alunos responsáveis
-- quem sao os estudantes responsáveis
+- aluna?
+- aluno?
 - alunos do projeto
+- alunos?
+- autor?
+- autores?
 - estudantes do projeto
+- eu gostaria de saber os autores
+- eu gostaria de saber quem fez o projeto
+- eu quero saber quem fez o proejto
 - fale me sobre os alunos do projeto
 - fale me sobre os estudantes do projeto
-- quais sao os alunos
-- quais sao os estudantes
+- orientador?
+- orientadora?
+- quais são os alunos?
+- quais são os estudantes?
+- quem criou o projeto?
+- quem criou o site?
+- quem desenvolveu isso?
+- quem desenvolveu o projeto?
+- quem e o orientador do projeto?
+- quem fez isso?
+- quem fez o chatbot
+- quem fez o projeto?
+- quem fez o site
+- quem foi a orientadora do projeto?
+- quem foi o orientador do projeto?
+- quem orientou o projeto?
+- quem são os alunos do projeto?
+- quem são os alunos responsáveis?
+- quem são os autores?
+- quem são os criadores?
+- quem são os estudantes do projeto?
+- quem são os estudantes responsáveis?
+- quem é a autora?
+- quem é a orientadora do projeto?
+- quem é o aluno do projeto?
+- quem é o autor ou autora?
+- quem é o autor?
+- quem é o criador?
+- quem é o desenvolvedor?
+- quem é o estudante do projeto?
+- quem é responsável pelo projeto?
+- quem é responsável pelo site?
 
 ## intent: faq/ask_technologies
-- quais tecnologias foram utilizadas
-- tecnologias do projeto
-- tecnologias
-- tecnologias utilizadas
+- como foi criado?
+- como foi desenvolvida a plataforma web?
+- como foi desenvolvido?
+- como foi feita a plataforma?
+- como foi programado o projeto?
+- como foi programado o site?
+- como foi programado?
+- eu gostaria de saber as techs
+- eu gostaria de saber as tecnologias
+- me fala sobre as tecnologias do projeto
+- me fala sobre como foi feita a programação
+- me fale sobre as tecnologias usadas no projeto
+- o que foi usado na criação?
+- o que foi usado no desenvolvimento?
+- o que vcs usaram para desenvolver?
+- o que vcs usaram para fazer o projeto?
+- oq foi usado na programação?
 - quais as tecnologias
+- quais bibliotecas foram usadas no desenvolvimento?
+- quais ferramentas foram usadas
+- quais foram as tecnologias?
+- quais frameworks foram usadas?
+- quais linguagens de programação foram usadas?
+- quais linguagens foram usadas para o desenvolvimento?
+- quais são as tecnologias?
+- quais tecnologias foram utilizadas
+- que framework foi usada?
 - que tecnologias voces usam?
+- que tecnologias?
+- que tipo de tecnologia foi usada?
+- tech
+- techs
+- techs usadas no projeto
+- tecnologias
+- tecnologias do projeto
+- tecnologias utilizadas
+- tecnologias?

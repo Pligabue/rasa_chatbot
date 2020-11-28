@@ -1,13 +1,48 @@
 ## intent:get_test_user
-- quero fazer um teste
+- eu estou aqui para testar
+- eu gostaria de fazer um teste
+- eu gostaria de testar
+- eu gostaria de testar o chatbot
+- eu gostaria de testar o sistema
+- eu queria fazer um teste
+- eu queria testar
+- eu queria testar o chatbot
+- eu queria testar o sistema
+- eu vou fazer um teste
+- eu vou ser tester
+- eu vou testar
 - fazer um teste
-- teste
-- testar
+- gera um perfil para mim
+- gera um perfil pra mim
+- gera um user pra mim
+- gera um usuário pra mim
+- gerar dados de teste
+- kro testar
+- kro teste
+- me dá um perfil
+- me dá um user
+- me dá um usuário
+- me gera um perfil
+- preciso de um perfil de teste
+- preciso de um perfil de testes
+- qro ser um tester
+- qro testar
+- qro teste
+- qro um user de test
+- qro um user de teste
+- qro um usuário de teste
+- quero experimentar
+- quero fazer um teste
+- quero ser um tester
 - quero testar
-- quero um teste
-- quero testar
-- vou testar
-- quero um usuario de teste
-- quero um de teste
 - quero teste
+- quero um de teste
+- quero um teste
+- quero um usuario de teste
+- test
+- testar
+- teste
+- vou experimentar
+- vou fazer um teste
 - vou querer testar
+- vou testar

@@ -20,6 +20,26 @@
 - opa
 - tudo bem?
 - tudo certo?
+- aoba
+- aopa
+- aeow
+- aeo
+- iai?
+- epa
+- bom dia
+- boa noite
+- boa tarde
+- boa madrugada
+- boa manhã
+- bom fim de tarde
+- bom começo de tarde
+- boas
+- boas tardes
+- bons dias
+- boas noites
+- buenas
+- de buenas?
+- i ai?
 
 ## intent:bye
 - adeus
@@ -44,13 +64,18 @@
 - agradeco
 - agradeço
 - eu agradeço
+- gratidão
+- grato
 - mt obg
 - muito obg
 - muito obrigado
+- muitíssimo obg
+- muitíssimo obrigado
 - obg
 - obg mesmo
 - obg msm
 - obrigado
+- obrigado mesmo
 - thx
 - valeu
 - valeu mesmo

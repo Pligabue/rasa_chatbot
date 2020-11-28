@@ -1,46 +1,208 @@
 ## intent:request_update
-- gostria de alterar meus dados
-- trocar meus dados
-- trocar de dados
-- mudar meus dados
-- mudar os meus dados
-- trocar os meus dados
+- alterar dados
+- alterar informações
 - alterar meus dados
 - alterar os meus dados
-- novos dados
+- atualizar dados
+- atualizar meu perfil
+- atualizar meus dados
+- eu quero atualizar meus dados
+- eu quero atualizar minhas informações
+- gostria de alterar meus dados
+- meu perfil ficou desatualizado
+- meu perfil não foi atualizado
+- meu perfil não tá atualizado
+- meu perfil tá desatualizado
 - meus dados
+- meus dados estão desatualizados
+- meus dados estão errados
+- meus dados estão incorretos
+- meus dados ficaram desatualizados
+- meus dados mudaram
+- meus dados não estão atualizados
+- meus dados não tão atualizados
+- meus dados tão desatualizados
+- meus dados tão errados
+- meus dados tão incorretos
+- mexer nas informações
+- mexer nos dados
+- minhas informações estão desatualizadas
+- minhas informações estão incorretas
+- minhas informações tão incorretas
+- mudar meus dados
+- mudar os meus dados
+- novos dados
 - os meus dados
+- preciso alterar uma coisa no meu perfil
+- preciso alterar uma informação
+- preciso atualizar meu perfil
+- preciso mexer no meu perfil
+- preciso mudar meu perfil
+- preciso trocar meus dados
+- qro alterar os dados
+- qro atualizar meus dados
+- qro mudar meus dados
+- quero alterar as informações
+- quero alterar o perfil
+- quero atualizar meu perfil
+- quero mudar meu perfil
+- quero trocar meus dados
+- tem como atualizar meu perfil?
+- tem como atualizar minhas informações?
+- tem como mudar meu perfil?
+- tem como mudar meus dados?
+- trocar dados
+- trocar de dados
+- trocar informações
+- trocar meus dados
+- trocar os meus dados
+- update info
+- update profile
 
 ## intent:update_phone_number
-- gostaria de alterar meu número de telefone
-- gostaria de alterar meu número de celular
-- gostaria de alterar meu telefone
-- gostaria de alterar meu celular
-- meu telefone
-- meu celular
-- mudar meu telefone
-- mudar meu celular
-- trocar de telefone
-- trocar de celular
-- alterar de telefone
-- alterar de celular
-- mudar telefone
-- mudar celular
-- trocar telefone
-- trocar celular
-- alterar telefone
 - alterar celular
-- novo telefone
+- alterar de celular
+- alterar de telefone
+- alterar telefone
+- como altero meu celular?
+- como altero meu número?
+- como altero meu telefone?
+- como faço para alterar meu número?
+- como faço para atualizar meu número?
+- como faço para mudar meu número?
+- como posso alterar meu celular?
+- como posso alterar meu telefone?
+- dá pra alterar meu número?
+- dá pra atualizar meu número?
+- dá pra mudar meu número?
+- eu gostaria de atualizar meu número
+- eu gostaria de atualizar meu telefone
+- gostaria de alterar meu celular
+- gostaria de alterar meu número de celular
+- gostaria de alterar meu número de telefone
+- gostaria de alterar meu telefone
+- meu No de celular mudou
+- meu No de telefone mudou
+- meu No tá errado
+- meu celular
+- meu celular está desatualizado
+- meu celular mudou de número
+- meu número mudou
+- meu número no sistema tá desatualizado
+- meu número no sistema tá errado
+- meu telefone
+- meu telefone está desatualizado
+- mudar celular
+- mudar meu celular
+- mudar meu telefone
+- mudar telefone
+- mudei de número de celular
+- mudei de número de telefone
+- mudei meu celular
+- mudei meu número
+- mudei meu telefone
 - novo celular
+- novo telefone
+- o cadastro do No tá errado
+- o cadastro do número tá errado
+- o número está incorreto
+- preciso atualizar meu número
+- preciso mudar meu celular
+- preciso mudar meu número
+- preciso mudar meu telefone
+- quero alterar meu número
+- quero atualizar meu número
+- quero informar meu celular novo
+- quero informar meu número novo
+- quero informar meu telefone novo
+- tem como atualizar meu celular?
+- tem como atualizar meu telefone?
+- tem como mudar meu celular?
+- tem como mudar meu número?
+- tem como mudar meu telefone?
+- trocar celular
+- trocar de celular
+- trocar de telefone
+- trocar telefone
+- troquei meu celular
+- troquei meu telefone
+- vc atualiza meu celular?
+- vc atualiza meu telefone?
+- vc pode atualizar meu celular?
+- vc pode atualizar meu telefone?
+- você poderia atualizar meu celular?
+- você poderia atualizar meu número?
+- você poderia mexer no meu número?
+- você poderia mudar meu celular?
+- você poderia mudar meu telefone?
 
 ## intent:update_email
-- gostaria de alterar meu endereço de email
-- gostaria de alterar meu email
-- meu email
-- mudar meu email
-- trocar de email
-- alterar o email
-- mudar email
-- trocar email
 - alterar email
+- alterar o email
+- cadastrei meu email errado
+- cadastrei meu endereço de email errado
+- eu gostaria de modificar meu email
+- eu gostaria de modificar meu endereço de email
+- eu gostaria de trocar meu email
+- eu mudei meu e-mail
+- eu preciso mudar meu email no sistema
+- eu quero modificar meu email
+- eu quero mudar de e-mail
+- eu troquei meu email
+- gostaria de alterar meu email
+- gostaria de alterar meu endereço de email
+- meu e-mail está errado
+- meu e-mail mudou
+- meu email
+- meu email está desatualizado
+- meu email está errado
+- meu email está incorreto
+- meu email ficou desatualizado
+- meu email ficou errado
+- meu email mudou
+- meu email no sistema está errado
+- meu email no sistema ficou errado
+- meu email no sistema tá errado
+- meu email não tá atualizado
+- meu email tá errado
+- meu email tá incorreto
+- meu endereço de e-mail mudou
+- meu endereço de email mudou
+- mudar email
+- mudar meu e-mail
+- mudar meu email
+- mudei de e-mail
+- mudei de email
 - novo email
+- não preenchi certo meu e-mail
+- não preenchi certo meu email
+- preciso atualizar meu e-mail
+- preciso atualizar meu endereço de e-mail
+- preciso atualizar meu endereço de email
+- preciso mudar meu email
+- preenchi meu email errado
+- preenchi meu endereço de email errado
+- qria atualizar meu email
+- qria trocar de email
+- qro atualizar meu email
+- qro trocar de email
+- quero atualizar meu e-mail
+- quero atualizar meu endereço de e-mail
+- quero mudar meu email
+- quero trocar meu e-mail
+- quero trocar meu email
+- tem como mudar meu email?
+- tem como vc mudar meu email?
+- tem como você alterar meu email?
+- tem como você modificar meu email?
+- trocar de email
+- trocar email
+- troquei de e-mail
+- troquei de email
+- vc altera meu email?
+- vc atualiza meu email?
+- vc pode alterar meu email?
+- vc poderia atualizar meu email?
+- vc poderia mudar meu email?
+- você pode atualizar meu e-mail?
+- você poderia atualizar meu e-mail?

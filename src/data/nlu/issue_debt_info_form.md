@@ -1,4 +1,5 @@
 ## intent:get_debt_info
+
 - dá pra eu ver tudo que tô devendo?
 - dá pra me mostrar tudo que estou devendo?
 - dá pra ver meu débito?
@@ -30,6 +31,14 @@
 - me mostra minhas contas não pagas
 - me mostra os valores que não paguei
 - me mostra todas as minhas contas não pagas
+- o que estou devendo?
+- o que eu tô devendo?
+- o que eu tô deveno?
+- oq eu tô devendo?
+- oq eu tô deveno?
+- posso saber quanto devo?
+- qria saber quanto tô devendo
+- qria ver quanto tô devendo
 - qro saber quanto eu tô devendo
 - qro ver meu débito atrasado
 - quanto dinheiro eu devo?

@@ -79,7 +79,7 @@ responses:
   utter_invalid_year:
   - text: Este ano é inválido.
   utter_no_bills:
-  - text: Você não tem nenhuma conta neste mês!
+  - text: Você não tem nenhuma conta no mês {month}/{year}!
   utter_no_debt:
   - text: Você não tem nenhuma conta não paga!
   utter_no_document_match:

@@ -45,7 +45,7 @@ class IssueDuplicateForm(FormAction):
                  if (bill.due_date.month == month and bill.due_date.year == year)]
 
         if not bills:
-            dispatcher.utter_message(template="utter_no_bills")
+            dispatcher.utter_message(template="utter_no_bills", month=f"{month:02}", year=str(year)[-2:])
             return []
 
         for bill in bills:
@@ -100,7 +100,7 @@ class IssueDuplicateForm(FormAction):
         year = tracker.get_slot("year")
         if year is None:
             year = datetime.date.today().year
-
+            
         return {"month": month, "year": year}
 
     def validate_year(self,
@@ -108,12 +108,14 @@ class IssueDuplicateForm(FormAction):
                       dispatcher: CollectingDispatcher,
                       tracker: Tracker,
                       domain: Dict[Text, Any]) -> Dict[Text, Any]:
+
         try:
             year = int(value)
-            if year > 2000:
-                return {"year": year}
-
+            if year < 1900:
+                year = None
+                dispatcher.utter_template("utter_invalid_year")
         except ValueError:
-            return {"year": None}
+            year = None
+            dispatcher.utter_template("utter_invalid_year")
 
-        return {"year": None}
+        return {"year": year}

@@ -55,9 +55,9 @@ def generate_test_user():
     year = today.year
     due_dates = []
     for i in range(24):
+        due_dates.append(datetime.strptime(f"{day}-{month}-{year}", "%d-%m-%Y").date())
         month = month-1 if month > 1 else 12
         year = year-1 if month == 12 else year
-        due_dates.append(datetime.strptime(f"{day}-{month}-{year}", "%d-%m-%Y").date())
 
     bills = [Bill(user=user,
                   value=round(uniform(0.0, 500.0), 2),

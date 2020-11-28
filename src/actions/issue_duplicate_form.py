@@ -92,12 +92,16 @@ class IssueDuplicateForm(FormAction):
                   "outubro", "novembro", "dezembro"]
 
         matches = difflib.get_close_matches(value.lower(), months)
-
         if not matches:
-            return {"month": None}
+            month = None
+        else:
+            month = months.index(matches[0]) + 1
 
-        month_num = months.index(matches[0]) + 1
-        return {"month": month_num}
+        year = tracker.get_slot("year")
+        if year is None:
+            year = datetime.date.today().year
+
+        return {"month": month, "year": year}
 
     def validate_year(self,
                       value: Text,

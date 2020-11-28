@@ -19,10 +19,15 @@
 - gerar dados de teste
 - kro testar
 - kro teste
+- me arruma um perfil de teste
+- me arruma um teste
 - me dá um perfil
 - me dá um user
 - me dá um usuário
+- me faz um perfil de teste
 - me gera um perfil
+- me vê um perfil de teste
+- me vê um teste
 - preciso de um perfil de teste
 - preciso de um perfil de testes
 - qro ser um tester

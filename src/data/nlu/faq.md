@@ -69,6 +69,11 @@
 - eu gostaria de entrar em contato
 - eu gostaria de entrar em contato com a empresa
 - eu gostaria de falar com a empresa
+- eu poderia falar com a empresa?
+- eu poderia falar com vocês?
+- eu poderia flar com vcs?
+- eu posso falar cm vcs
+- eu quero flar com vocês
 - existe algum modo de entrar em contato com a empresa?
 - existe algum modo de falar com vocês?
 - existe alguma maneira de entrar em contato com a empresa?
@@ -76,12 +81,22 @@
 - posso entrar em contato com vocês?
 - posso entrar em contato?
 - posso falar com a empresa?
+- qro entrar em contato
+- qro falar com a empresa
+- qro falar com vocês
+- qro flar cm vcs
 - qual o contacto?
 - qual o contato?
+- quero entrar em contato
+- quero falar c a empresa
+- quero falar cm vocês
+- quero falar com vocês
 - se tiver uma dúvida, como posso entrar em contacto com vocês?
 - tem como falar com vcs?
 
 ## intent: faq/ask_project
+- eu gostaria de saber mais sobre o projeto
+- eu queria saber mais sobre o projeto
 - explica o projeto
 - fala sobre o projeto
 - fale me mais sobre o projeto
@@ -89,23 +104,43 @@
 - info sobre o projeto
 - informação sobre o projeto
 - me explica o projeto
+- me explique mais sobre o projeto
+- me explique o projeto
+- me explique sobre o tcc
 - me fala sobre o projeto
+- me fale mais sobre o projeto
+- me fale sobre o projeto
+- me fale sobre o tcc
 - o projeto faz o que?
 - o que faz o projeto?
+- o que o projeto faz?
 - o que é o projeto?
 - oq é o projeto?
 - por que esse projeto foi feito?
 - por que este projeto foi desenvolvido?
+- por que o tcc foi desenvolvido?
+- pq esse projeto foi feito?
+- pq este projeto foi desenvolvido?
+- pq este projeto foi feito?
+- pq o tcc foi feito?
 - pq vcs fizeram o projeto?
+- pra que vcs desenvolveram isso?
+- pra que vcs fizeram o projeto?
 - qual o motivo do projeto?
+- qual o propósito?
 - qual é a razão deste projeto?
 - qual é o motivo desse projeto?
+- qual é o objetivo do projeto?
+- qual é o objetivo?
 - qual é o projeto?
+- qual é o propósito do projeto?
+- qual é o propósito?
 - que projeto é esse?
 - sobre o projeto
 - sobre o que é esse projeto?
 - sobre o que é este projeto?
 - sobre o que é o projeto
+- tem algum motivo para o projeto?
 
 ## intent: faq/ask_students
 - aluna?
@@ -187,6 +222,7 @@
 - tech
 - techs
 - techs usadas no projeto
+- techs usadas?
 - tecnologias
 - tecnologias do projeto
 - tecnologias utilizadas

@@ -5,7 +5,11 @@
 - acho que vcs não enviaram a conta
 - acho que vcs não enviaram a conta de [fevereiro](month)
 - conta de [fevereiro](month)
+- conta de [junho](month)
+- conta de [março](month)
 - conta de [março](month) de [2019](year)
+- conta de [outubro](month) de [2019](year)
+- conta de [outubro](month) de [2020](year)
 - conta do mês de [janeiro](month)
 - eu não recebi a conta de [setembro](month)
 - gostaria da segunda via de uma conta
@@ -26,8 +30,10 @@
 - preciso de uma 2a via
 - preciso de uma segunda via
 - quero a conta de [dezembro](month) de [2019](year)
+- quero a conta de [setembro](month) de [2019](year)
 - segunda via
 - segunda via da conta
+- segunda via de [agosto](month) de [2020](year)
 - segunda via de [junho](month) de [2018](year)
 - segunda via de [maio](month)
 - uma conta

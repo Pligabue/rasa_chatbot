@@ -115,6 +115,8 @@
 - quero informar meu celular novo
 - quero informar meu número novo
 - quero informar meu telefone novo
+- quero mudar o celular
+- quero trocar telefone
 - tem como atualizar meu celular?
 - tem como atualizar meu telefone?
 - tem como mudar meu celular?
@@ -189,6 +191,7 @@
 - quero atualizar meu e-mail
 - quero atualizar meu endereço de e-mail
 - quero mudar meu email
+- quero trocar email
 - quero trocar meu e-mail
 - quero trocar meu email
 - tem como mudar meu email?

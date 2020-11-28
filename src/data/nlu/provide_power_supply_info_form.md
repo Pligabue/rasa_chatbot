@@ -114,6 +114,8 @@
 - a luz já voltou?
 - a luz voltou?
 - como esta a energia aqui?
+- como esta a energia na minha regiao
+- como esta a situaçao da luz
 - como esta o conserto?
 - como está o concerto?
 - como ficou o concerto?
@@ -128,6 +130,7 @@
 - eu queria saber sobre a energia na minha rua
 - gostaria de informações sobre a eletricidade
 - gostaria de informações sobre a energia
+- gostaria de saber se minha rua esta sem energia
 - informações sobre a eletricidade
 - informações sobre a energia
 - informações sobre a luz
@@ -154,6 +157,7 @@
 - queria saber sobre a energia no bairro
 - queria saber sobre a energia no meu quarteirão
 - queria saber sobre a energia no quarteirão
+- quero informações sobre a minha regia
 - será que a eletricidade voltou?
 - será que a energia voltou?
 - será que a luz voltou?

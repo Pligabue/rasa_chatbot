@@ -138,5 +138,6 @@
 - não é esse
 - não é isso
 - não, obrigado
+- não, tchau
 - recuso
 - yesnt

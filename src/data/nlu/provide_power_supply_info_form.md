@@ -3,6 +3,9 @@
 - a energia não está funcionando
 - a energia não tá funcionando
 - a luz caiu
+- a região ficou sem luz
+- a região toda está sem energia
+- a região toda ficou sem energia
 - acho que arrebentou o cabo de energia
 - acho que arrebentou o fio de energia
 - acho que queimou o transformador
@@ -32,13 +35,24 @@
 - estou sem energia
 - estou sem luz
 - estourou o transformador
+- está havendo um problema na linha de transmissão
 - está ocorrendo um apagão
+- eu gostaria de informar a falta de energia elétrica
+- eu gostaria de informar um problema na transmissão
+- eu gostaria de informar uma queda de energia
 - eu ouvi o transformador estourar
+- eu quero informar um problema na transmissão de energia
+- eu quero informar um problema na transmissão elétrica
 - explodiu o transformador
 - ficamos sem eletricidade
 - ficamos sem energia
 - ficamos sem luz
 - ficou tudo apagado aqui
+- gostaria de informar a falta de eletricidade
+- gostaria de informar a falta de energia
+- gostaria de informar um problema na transmissão
+- gostaria de informar uma falta de energia
+- gostaria de informar uma queda de luz
 - houve um problema na distribuição de energia
 - houve uma queda de eletricidade
 - houve uma queda de energia
@@ -62,6 +76,11 @@
 - minha casa está sem energia
 - minha casa está sem luz
 - minha casa não tem energia
+- minha região está sem energia
+- minha região ficou sem eletricidade
+- minha região ficou sem energia
+- minha região ficou sem luz
+- minha região tá sem luz
 - minha rua está sem eletricidade
 - minha rua está sem energia
 - minha rua não tem energia
@@ -89,6 +108,8 @@
 - porque estou sem eletricidade
 - porque estou sem energia
 - queimou o transformador
+- quero informar um problema na linha de transmissão
+- quero informar um problema no poste
 - robaram os fios
 - roubaram o fio de energia
 - roubaram os fios

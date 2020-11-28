@@ -8,12 +8,12 @@
 
 ## faq project
 * faq/ask_project
-  - Este projeto de formatura se trata de um chatbot para a antecipação de demandas em um domínio de uma distribuidora de energia elétrica.
+  - Este projeto de formatura se trata de um chatbot para a antecipação de demandas no domínio específico de uma distribuidora de energia elétrica.
 
 ## faq students
 * faq/ask_students
-  - Os alunos responsáveis são Bruno Brandão Inácio e Pedro de Moraes Ligabue, orientados pela professora Anarosa Alves Franco Brandão.
+  - Os alunos responsáveis são Bruno Brandão Inácio e Pedro de Moraes Ligabue, orientados pela professora Dra. Anarosa Alves Franco Brandão.
   
 ## faq technologies
 * faq/ask_technologies
-  - Este projeto utiliza a biblioteca React para o desenvolvimento da plataforma web (front-end), com o auxílio do framework Material-UI para a criação da identidade visual.\n \nO chatbot (back-end) foi feito utilizando a biblioteca Rasa NLU, em Python. Esta biblioteca utiliza um modelo de pipeline para executar as diversas tarefas que compõe o processamento de linguagem natural, tal como a tokenização, a extração de entidades, a indentificação de intenções e a seleção de respostas.
+  - Este projeto utiliza a biblioteca React para o desenvolvimento da plataforma web (front-end), com o auxílio do framework Material-UI para a criação da identidade visual.\n \nO chatbot (back-end) foi desenvolvido em Python utilizando a biblioteca Rasa NLU. Esta biblioteca utiliza um modelo de pipeline para executar as diversas tarefas que compõem o processamento de linguagem natural, tais como a extração de entidades, a indentificação de intenções e a seleção de respostas.\n \nPor fim, a comunicação entre os usuários e o chatbot foi feita com base na biblioteca Socket.IO, que se baseia no protocolo WebSockets.

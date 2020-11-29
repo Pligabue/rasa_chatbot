@@ -10,6 +10,7 @@ def get_occurrence_messages(occurrence):
             "estimation": "Ainda não há previsão de conclusão",
             "additional_comments": ""
         }
+
     return {
         "category": ("Uma manutenção"
                      if occurrence.category_is("maintenance")

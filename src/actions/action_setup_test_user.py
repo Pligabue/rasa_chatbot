@@ -15,6 +15,7 @@ class SetupTestUser(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         test_user_info = generate_test_user()
+
         cpf = test_user_info["cpf"]
         cep = test_user_info["cep"]
         start_date = test_user_info["oldest_bill"].strftime("%d/%m/%Y")
@@ -22,10 +23,13 @@ class SetupTestUser(Action):
 
         formatted_cpf = f"{cpf[0:3]}.{cpf[3:6]}.{cpf[6:9]}-{cpf[9:11]}"
         formatted_cep = f"{cep[0:5]}-{cep[5:8]}"
+
         dispatcher.utter_message(
-            text=f"Para realizar o teste, utilize as seguintes informações:\n" +
-                 f"- CPF: {formatted_cpf}\n" +
+            text=f"Para realizar o teste, utilize as seguintes informações:\n"
+                 f"- CPF: {formatted_cpf}\n"
                  f"- CEP: {formatted_cep}")
-        dispatcher.utter_message(text=f"Você tem contas de luz de {start_date} até {stop_date}")
+
+        dispatcher.utter_message(text=f"Você tem contas de luz de {start_date}"
+                                      f" até {stop_date}")
 
         return []

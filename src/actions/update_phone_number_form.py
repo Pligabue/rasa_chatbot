@@ -23,7 +23,8 @@ class UpdatePhoneNumberForm(FormAction):
     def slot_mappings(self) -> Dict[Text, Union[Dict, List[Dict]]]:
         return {
             "cpf": [self.from_entity(entity="cpf", intent="inform")],
-            "phone_number": [self.from_entity(entity="phone_number", intent="inform")]
+            "phone_number": [self.from_entity(entity="phone_number",
+                                              intent="inform")]
         }
 
     def submit(self,
@@ -89,6 +90,6 @@ class UpdatePhoneNumberForm(FormAction):
                 return {"phone_number": striped_phone_number}
         except phonenumberutil.NumberParseException:
             pass
-            
+
         dispatcher.utter_message(template="utter_invalid_phone_number")
         return {"phone_number": None}

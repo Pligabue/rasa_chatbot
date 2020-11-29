@@ -21,6 +21,7 @@ def generate_test_user():
 
     generated_cep = "".join([str(randint(0, 9)) for _ in range(8)])
     address = Address.where(Address.postal_code == generated_cep).first()
+
     while address is not None:
         generated_cep = "".join([str(randint(0, 9)) for _ in range(8)])
         address = Address.where(Address.postal_code == generated_cep).first()
@@ -54,6 +55,7 @@ def generate_test_user():
     month = today.month
     year = today.year
     due_dates = []
+
     for _ in range(24):
         due_dates.append(datetime.strptime(f"{day}-{month}-{year}", "%d-%m-%Y").date())
         month = month-1 if month > 1 else 12
@@ -75,7 +77,7 @@ def generate_test_user():
     session.add_all(bills)
 
     session.commit()
-    
+
     return {
         "cpf": generated_cpf,
         "cep": generated_cep,

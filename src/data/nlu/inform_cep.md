@@ -141,7 +141,7 @@
 - o n° é [64695-099](cep)
 - o n eh [06992-540](cep)
 - o num é [53616-436](cep)
-- o cep da casa dele é[39694-629](cep)
+- o cep da casa dele é [39694-629](cep)
 - o cep dele é [47301-349](cep)
 - o cep dela é [49265-370](cep)
 - o cep da casa dela é [10087-354](cep)

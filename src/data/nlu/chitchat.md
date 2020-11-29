@@ -10,6 +10,8 @@
 - hola
 - oba
 - oi
+- oie
+- ois
 - oi, como estás?
 - oi, como vai?
 - oi, tudo bem?

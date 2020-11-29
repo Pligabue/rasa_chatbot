@@ -5,11 +5,11 @@ from datetime import datetime, timedelta, date
 
 
 def generate_test_user():
-
-    generated_cpf = "".join([str(randint(0, 9)) for i in range(11)])
+    generated_cpf = "".join([str(randint(0, 9)) for _ in range(11)])
     user = User.where(User.document == generated_cpf).first()
+
     while user is not None:
-        generated_cpf = "".join([str(randint(0, 9)) for i in range(11)])
+        generated_cpf = "".join([str(randint(0, 9)) for _ in range(11)])
         user = User.where(User.document == generated_cpf).first()
 
     user = User(
@@ -19,10 +19,10 @@ def generate_test_user():
         email=f"test_{generated_cpf}@email.com",
         phone_number=f"55119{generated_cpf[0:8]}")
 
-    generated_cep = "".join([str(randint(0, 9)) for i in range(8)])
+    generated_cep = "".join([str(randint(0, 9)) for _ in range(8)])
     address = Address.where(Address.postal_code == generated_cep).first()
     while address is not None:
-        generated_cep = "".join([str(randint(0, 9)) for i in range(8)])
+        generated_cep = "".join([str(randint(0, 9)) for _ in range(8)])
         address = Address.where(Address.postal_code == generated_cep).first()
 
     address = Address(
@@ -50,11 +50,11 @@ def generate_test_user():
                             estimated_end_time=(datetime.now()-timedelta(hours=1) if random() < 0.5 else None))
 
     today = date.today()
-    day = today.day
+    day = randint(1, 15)
     month = today.month
     year = today.year
     due_dates = []
-    for i in range(24):
+    for _ in range(24):
         due_dates.append(datetime.strptime(f"{day}-{month}-{year}", "%d-%m-%Y").date())
         month = month-1 if month > 1 else 12
         year = year-1 if month == 12 else year

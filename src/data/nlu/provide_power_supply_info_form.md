@@ -1,51 +1,199 @@
 ## intent:supply_power_outage_information
-- houve uma queda de energia
-- houve uma queda de eletricidade
-- houve um problema na distribuição de energia
-- há um problema na distribuição de energia
-- porque estou sem energia
-- porque estou sem eletricidade
+- a casa inteira tá sem energia
 - a energia não está funcionando
 - a energia não tá funcionando
-- caiu a luz
-- caiu a energia
-- caiu a eletricidade
-- tô sem luz
-- tô sem energia
-- tô sem eletricidade
-- estou sem luz
-- estou sem energia
-- estou sem eletricidade
-- estamos sem luz
-- estamos sem energia
-- estamos sem eletricidade
-- cadê a energia
-- cade a energia
+- a luz caiu
+- a região ficou sem luz
+- a região toda está sem energia
+- a região toda ficou sem energia
+- acho que arrebentou o cabo de energia
+- acho que arrebentou o fio de energia
+- acho que queimou o transformador
+- acho que teve um apagão
+- acho que teve um blackout
+- aconteceu um apagão
+- apagou tudo
+- apagou tudo aqui
+- aqui onde eu moro ta sem eletricidade
+- aqui onde eu moro tá sem energia
+- arrebentaram os cabos de energia
+- arrebentou o cabo de energia
+- arrebentou o fio de energia
 - cade a eletricidade
-- minha rua está sem energia
-- minha rua está sem eletricidade
-- minha rua tá sem luz
-- meu prédio está sem energia
-- meu prédio está sem eletricidade
+- cade a energia
+- cadê a energia
+- caiu a eletricidade
+- caiu a energia
+- caiu a luz
+- caiu o fio de energia
+- estamos sem eletricidade
+- estamos sem energia
+- estamos sem energia na rua
+- estamos sem luz
+- estorou o transformador
+- estou sem eletricidade
+- estou sem energia
+- estou sem luz
+- estourou o transformador
+- está havendo um problema na linha de transmissão
+- está ocorrendo um apagão
+- eu gostaria de informar a falta de energia elétrica
+- eu gostaria de informar um problema na transmissão
+- eu gostaria de informar uma queda de energia
+- eu ouvi o transformador estourar
+- eu quero informar um problema na transmissão de energia
+- eu quero informar um problema na transmissão elétrica
+- explodiu o transformador
+- ficamos sem eletricidade
+- ficamos sem energia
+- ficamos sem luz
+- ficou tudo apagado aqui
+- gostaria de informar a falta de eletricidade
+- gostaria de informar a falta de energia
+- gostaria de informar um problema na transmissão
+- gostaria de informar uma falta de energia
+- gostaria de informar uma queda de luz
+- houve um problema na distribuição de energia
+- houve uma queda de eletricidade
+- houve uma queda de energia
+- há um problema na distribuição de energia
+- meu bairro tá sem eletricidade
+- meu bairro tá sem energia
+- meu bairro tá sem luz
 - meu predio está sem luz
-- minha casa está sem energia
-- minha casa está sem eletricidade
-- minha casa está sem luz
-- meu quarteirão está sem energia
+- meu prédio está sem eletricidade
+- meu prédio está sem energia
 - meu quarteirão está sem eletricidade
-- meu quarteirao está sem luz
+- meu quarteirão está sem energia
+- meu quarteirão está sem luz
+- meu quarteirão não tem energia
+- meu quarteirão tá sem energia
+- meu quarteirão tá sem luz
+- meu quarterão tá sem eletricidade
+- meu quarterão tá sem energia
+- meu quarterão tá sem luz
+- minha casa está sem eletricidade
+- minha casa está sem energia
+- minha casa está sem luz
+- minha casa não tem energia
+- minha região está sem energia
+- minha região ficou sem eletricidade
+- minha região ficou sem energia
+- minha região ficou sem luz
+- minha região tá sem luz
+- minha rua está sem eletricidade
+- minha rua está sem energia
+- minha rua não tem energia
+- minha rua tá sem luz
+- o bairro todo está sem energia
+- o bairro todo ficou sem energia
+- o bairro todo tá sem energia
+- o bairro todo tá sem luz
+- o bairro tá sem energia
+- o bairro tá sem luz
+- o bairro tá todo apagado
+- o bairro tá todo sem energia
+- o caminhão arrebentou o cabo de energia
+- o caminhão arrebentou o fio de energia
+- o poste caiu
+- o poste foi derrubado
+- o prédito inteiro ficou sem energia
+- o prédito todo tá sem energia
+- o prétido todo está sem luz
+- o quarteirão todo ficou sem energia
+- o quarteirão todo ficou sem luz
+- onde eu moro tá sem eletricidade
+- onde eu moro tá sem energia
+- onde eu moro tá sem luz
+- porque estou sem eletricidade
+- porque estou sem energia
+- queimou o transformador
+- quero informar um problema na linha de transmissão
+- quero informar um problema no poste
+- robaram os fios
+- roubaram o fio de energia
+- roubaram os fios
+- roubaram os fios de energia
+- ta tudo sem eletricidade aqui
+- teve um apagão
+- teve um blackout
+- tá acontecendo um apagão
+- tá sem eletricidade aqui
+- tá sem energia aqui
+- tá sem luz aqui
+- tá tudo sem energia aqui
+- tô sem eletricidade
+- tô sem energia
+- tô sem luz
+- um caminhão arrebentou o fio de energia
+- um carro derrubou o poste
 
 ## intent:get_power_outage_information
-- gostaria de informações sobre a energia
-- gostaria de informações sobre a eletricidade
-- informações sobre energia
-- como esta a energia aqui
+- a eletricidade já voltou?
+- a eletricidade voltou?
+- a energia voltou?
+- a luz já voltou?
+- a luz voltou?
+- como esta a energia aqui?
+- como esta a energia na minha regiao
+- como esta a situaçao da luz
+- como esta o conserto?
+- como está o concerto?
+- como ficou o concerto?
+- como ficou o conserto?
+- como tá o conserto?
+- deu certo de arrumar o poste?
+- deu certo de arrumar o transformador?
 - energia na minha area
-- como esta o conserto
-- informacoes sobre a energia
-- informacoes sobre a luz
-- informacoes sobre a eletricidade
-- informacoes sobre meu bairro
-- informacoes sobre a minha area
-- informacoes sobre a minha regiao
-- informacoes sobre o meu quarteirao
+- eu gostaria de saber sobre a energia no meu bairro
+- eu gostaria de saber sobre a energia no meu quarteirão
+- eu preciso de informações sobre a energia na rua
+- eu queria saber sobre a energia na minha rua
+- gostaria de informações sobre a eletricidade
+- gostaria de informações sobre a energia
+- gostaria de saber se minha rua esta sem energia
+- informações sobre a eletricidade
+- informações sobre a energia
+- informações sobre a luz
+- informações sobre a minha area
+- informações sobre a minha regiao
+- informações sobre energia
+- informações sobre meu bairro
+- informações sobre o meu quarteirao
+- ja arrumaram o poste?
+- já arrumaram o transformador?
+- já consertaram o poste?
+- já consertaram o transformador?
+- já trocaram os cabos?
+- já trocaram os fios?
+- me diga se já arrumaram o poste
+- me diga se já consertaram o poste
+- me diga se já voltou a energia
+- preciso de informações sobre a eletricidade
+- preciso de informações sobre a energia
+- qria saber se já voltou a energia
+- qria saber se voltou a luz
+- qro saber se já voltou a energia
+- qro saber se voltou a luz
+- queria saber sobre a energia no bairro
+- queria saber sobre a energia no meu quarteirão
+- queria saber sobre a energia no quarteirão
+- quero informações sobre a minha regia
+- será que a eletricidade voltou?
+- será que a energia voltou?
+- será que a luz voltou?
+- vc pode me dizer se a rua já está com energia?
+- vc pode me dizer se já arrumaram a energia?
+- vc pode me dizer se já arrumaram o poste?
+- vc pode me dizer se já consertaram a energia?
+- vc sabe me dizer se já arrumaram a energia?
+- vc sabe me dizer se já voltou a energia no bairro?
+- vc sabe me dizer se já voltou a energia no prédio?
+- vcs já arruamram o transformador?
+- vcs já arrumaram o problema da luz?
+- vcs já consertaram o problema da energia?
+- vcs já consertaram o transformador?
+- você me diz se já voltou a energia?
+- você pode me dizer se já arrumaram a energia?
+- você pode me dizer se já voltou a luz no bairro?
+- você sabe me dizer que já voltou a energia?

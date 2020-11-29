@@ -1,92 +1,145 @@
 ## intent:greet
+- aow
+- como vai?
+- e ai?
+- e aí?
+- ei
+- hello
+- hey
+- hi
+- hola
+- oba
 - oi
-- olá
-- oi, tudo bem?
-- oi, como vai?
+- oie
+- ois
 - oi, como estás?
+- oi, como vai?
+- oi, tudo bem?
 - oi, tudo certo?
+- olá
 - olá, tudo bem?
 - olá, tudo certo?
 - opa
-- e aí?
-- e ai?
-- hey
-- ei
-- hi
-- hello
-- hola
+- tudo bem?
+- tudo certo?
+- aoba
+- aopa
+- aeow
+- aeo
+- iai?
+- epa
+- bom dia
+- boa noite
+- boa tarde
+- boa madrugada
+- boa manhã
+- bom fim de tarde
+- bom começo de tarde
+- boas
+- boas tardes
+- bons dias
+- boas noites
+- buenas
+- de buenas?
+- i ai?
 
 ## intent:bye
-- tchau
 - adeus
 - até
-- até mais
-- até logo
+- até algum dia
 - até breve
-- tchau tchau
+- até logo
+- até mais
 - bye
 - bye bye
 - falou
-- flw
 - fl
+- flw
+- good bye
+- tchau
+- tchau tchau
 - xau
 
 ## intent:thank
-- obrigado
-- muito obrigado
-- eu agradeço
-- valeu
-- agradeço
-- agradeco
+- agradecida
 - agradecido
-- muito obg
+- agradeco
+- agradeço
+- eu agradeço
+- gratidão
+- grato
 - mt obg
+- muito obg
+- muito obrigado
+- muitíssimo obg
+- muitíssimo obrigado
 - obg
-- vlw
+- obg mesmo
+- obg msm
+- obrigado
+- obrigado mesmo
 - thx
+- valeu
+- valeu mesmo
+- valeu msm
+- vlw
+- vlw msm
 
 ## intent:affirm
-- sim
-- certo
-- isso
-- isto
-- isso mesmo
-- eh isto mesmo
-- é
-- é isso
-- isso ai
-- é isso aí
-- isso msm
-- com certeza
-- ok
-- eh
-- uhum
+- affirmative
 - aham
-- yep
-- yes
-- check
 - beleza
 - blz
-- si
+- certo
+- check
+- com certeza
+- eh
+- eh isto mesmo
+- isso
+- isso ai
+- isso mesmo
+- isso msm
+- isto
+- ok
+- positive
+- positivo
 - s
+- si
+- sim
+- uhum
 - y
+- yeah
+- yep
+- yes
+- é
+- é isso
+- é isso aí
 
 ## intent:deny
-- não
-- não é
-- não é esse
-- não é bem esse
-- esse não
-- recuso
-- não não
-- não é isso
-- não é bem isso
-- não eh isso
+- assim não
 - de jeito nenhum
 - de modo algum
-- não, obrigado
+- esse não
+- n
 - nao
 - nao, obrigado
-- nop
+- neim
 - no
-- n
+- nop
+- nope
+- nunca
+- nyaum
+- não
+- não concordo
+- não eh isso
+- não faz isso
+- não não
+- não é
+- não é bem esse
+- não é bem isso
+- não é esse
+- não é isso
+- não, obrigado
+- não, tchau
+- recuso
+- yesnt

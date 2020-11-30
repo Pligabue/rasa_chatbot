@@ -1,16 +1,16 @@
-from typing import Dict, Text, Any, List, Union, Optional
-import re
+from typing import Dict, Text, Any, List, Union
 import datetime
 import difflib
 
 from rasa_sdk import Tracker
-from rasa_sdk.forms import FormAction, REQUESTED_SLOT
+from rasa_sdk.forms import FormAction
 from rasa_sdk.executor import CollectingDispatcher
 
-from db import session, User
+from db import User
+from .cpf_validation import CPFValidation
 
 
-class IssueDuplicateForm(FormAction):
+class IssueDuplicateForm(FormAction, CPFValidation):
     def name(self) -> Text:
         return "issue_duplicate_form"
 

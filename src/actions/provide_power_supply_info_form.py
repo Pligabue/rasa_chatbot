@@ -1,12 +1,12 @@
-from typing import Dict, Text, Any, List, Union, Optional
+from typing import Dict, Text, Any, List, Union
 import re
 from datetime import datetime
 
 from rasa_sdk import Tracker
-from rasa_sdk.forms import FormAction, REQUESTED_SLOT
+from rasa_sdk.forms import FormAction
 from rasa_sdk.executor import CollectingDispatcher
 
-from db import session, User, PowerSupply, Occurrence, Address
+from db import session, Occurrence
 
 from helpers.address_power_supply import get_power_supply_by_postal_code
 from helpers.occurrence_messages import get_occurrence_messages

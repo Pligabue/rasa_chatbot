@@ -55,7 +55,7 @@ responses:
   utter_ask_year:
   - text: De que ano?
   utter_invalid_year:
-  - text: Este ano é inválido.
+  - text: Este ano é inválido. Só mantemos registros de anos a partir do ano {min_year}.
   utter_ask_email:
   - text: Qual e-mail gostaria de usar?
   utter_invalid_email:

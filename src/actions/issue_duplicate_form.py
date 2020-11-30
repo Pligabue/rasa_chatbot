@@ -64,25 +64,6 @@ class IssueDuplicateForm(FormAction, CPFValidation):
 
         return []
 
-    def validate_cpf(self,
-                     value: Text,
-                     dispatcher: CollectingDispatcher,
-                     tracker: Tracker,
-                     domain: Dict[Text, Any]) -> Dict[Text, Any]:
-
-        cpf = re.sub(r"[^\d]", "", value)
-
-        user = User.where(User.document == cpf).first()
-
-        if user is None:
-            if len(cpf) == 11:
-                dispatcher.utter_message(template="utter_no_document_match")
-            else:
-                dispatcher.utter_message(template="utter_invalid_cpf")
-            return {"cpf": None}
-        else:
-            return {"cpf": cpf}
-
     def validate_month(self,
                        value: Text,
                        dispatcher: CollectingDispatcher,
@@ -95,12 +76,14 @@ class IssueDuplicateForm(FormAction, CPFValidation):
                   "outubro", "novembro", "dezembro"]
 
         matches = difflib.get_close_matches(value.lower(), months)
-        year = tracker.get_slot("year")
+        month = months.index(matches[0]) + 1 if matches else None
 
-        return {
-            'month': months.index(matches[0]) + 1 if matches else None,
-            'year': year if year is not None else datetime.date.today().year
-        }
+        year = next(tracker.get_latest_entity_values("year"), None)
+
+        if year is not None:
+            return {"month": month}
+        else:
+            return {"month": month, "year": datetime.date.today().year}
 
     def validate_year(self,
                       value: Text,
@@ -109,12 +92,11 @@ class IssueDuplicateForm(FormAction, CPFValidation):
                       domain: Dict[Text, Any]) -> Dict[Text, Any]:
         try:
             year = int(value)
-            if year < 1900:
+            if year < 2000:
                 year = None
-                dispatcher.utter_template("utter_invalid_year", tracker)
-
+                dispatcher.utter_message(template="utter_invalid_year", min_year=2000)
         except ValueError:
             year = None
-            dispatcher.utter_template("utter_invalid_year", tracker)
+            dispatcher.utter_message(template="utter_invalid_year", min_year=2000)
 
         return {"year": year}

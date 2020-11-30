@@ -140,17 +140,97 @@
     - form{"name": "update_email_form"}
     - slot{"requested_slot": "cpf"}
 * faq
+    - action_deactivate_form
     - form{"name": null}
     - respond_faq
     - utter_anything_else
 
-## interactive_story_13
+## interrupted_forms 1
 * get_duplicate_bill
     - issue_duplicate_form
     - form{"name": "issue_duplicate_form"}
     - slot{"requested_slot": "cpf"}
 * faq
+    - action_deactivate_form
     - form{"name": null}
     - respond_faq
-    - utter_anything_else
+
+## interrupted_forms 2
+* get_duplicate_bill
+    - issue_duplicate_form
+    - form{"name": "issue_duplicate_form"}
+    - slot{"requested_slot": "cpf"}
+* deny
+    - action_deactivate_form
+    - form{"name": null}
+    - utter_what_do_you_want
+
+## interrupted_forms 3
+* get_duplicate_bill
+    - issue_duplicate_form
+    - form{"name": "issue_duplicate_form"}
+    - slot{"requested_slot": "cpf"}
+* bye
+    - action_deactivate_form
+    - form{"name": null}
+    - utter_bye
+
+## interrupted_forms 4
+* get_duplicate_bill
+    - issue_duplicate_form
+    - form{"name": "issue_duplicate_form"}
+    - slot{"requested_slot": "cpf"}
+* greet
+    - utter_greet
+    - issue_duplicate_form
+
+## interrupted_forms 4
+* get_duplicate_bill
+    - issue_duplicate_form
+    - form{"name": "issue_duplicate_form"}
+    - slot{"requested_slot": "cpf"}
+* update_phone_number
+    - action_deactivate_form
+    - update_phone_number_form
+    - form{"name": "update_phone_number_form"}
+
+## interrupted_forms 4
+* get_duplicate_bill
+    - issue_duplicate_form
+    - form{"name": "issue_duplicate_form"}
+    - slot{"requested_slot": "cpf"}
+* update_email
+    - action_deactivate_form
+    - update_email_form
+    - form{"name": "update_email_form"}
+
+## interrupted_forms 5
+* get_power_outage_information
+    - provide_power_supply_info_form
+    - form{"name": "issue_duplicate_form"}
+    - slot{"requested_slot": "cep"}
+* deny
+    - action_deactivate_form
+    - form{"name": null}
+    - utter_what_do_you_want
+
+## interrupted_forms 6
+* get_power_outage_information
+    - provide_power_supply_info_form
+    - form{"name": "provide_power_supply_info_form"}
+    - slot{"requested_slot": "cep"}
+* bye
+    - action_deactivate_form
+    - form{"name": null}
+    - utter_bye
+
+## interrupted_forms 7
+* get_power_outage_information
+    - provide_power_supply_info_form
+    - form{"name": "provide_power_supply_info_form"}
+    - slot{"requested_slot": "cep"}
+* greet
+    - utter_greet
+    - provide_power_supply_info_form
+
 

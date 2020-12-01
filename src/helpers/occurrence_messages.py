@@ -1,5 +1,5 @@
-def get_hours_util_estimation(occurrence):
-    occurrence.time_until_estimation().total_seconds() // 3600
+def get_hours_until_estimation(occurrence):
+    return occurrence.time_until_estimation().total_seconds() // 3600
 
 
 def get_occurrence_messages(occurrence):
@@ -29,13 +29,9 @@ def get_occurrence_messages(occurrence):
                        and occurrence.category_is("power_outage"))
                    else "ocorreu"),
 
-        "estimation": ("Ainda não há previsão de conclusão"
-                       if not occurrence.has_estimation()
-                       else "A operação deve ser normalizada em "
-                            "até uma hora"
-                       if get_hours_util_estimation(occurrence) <= 1
-                       else f"A operação deve ser normalizada dentro de "
-                            f"{get_hours_util_estimation(occurrence)} horas"),
+        "estimation": ("Ainda não há previsão de conclusão" if not occurrence.has_estimation()
+                       else "A operação deve ser normalizada em até uma hora" if get_hours_until_estimation(occurrence) <= 1
+                       else f"A operação deve ser normalizada dentro de {get_hours_until_estimation(occurrence)} horas"),
 
         "additional_comments": ("Para acompanhar o status da ocorrência, "
                                 "acesse sitegenerico.com/ocorrencia/"

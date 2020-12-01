@@ -55,6 +55,8 @@ responses:
   - text: De que ano?
   utter_bye:
   - text: Até mais!
+  utter_continue:
+  - text: Quer continuar?
   utter_default:
   - text: Desculpe, não entendi. Pode repetir?
   utter_future_paid_bill:

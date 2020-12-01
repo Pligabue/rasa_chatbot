@@ -5,8 +5,8 @@
   - update_phone_number_form
   - form{"name": "update_phone_number_form"}
   - form{"name": null}
-  - utter_ask_any_more_data
   - action_clear_temp_slots
+  - utter_ask_any_more_data
 * deny
   - utter_give_feedback
   - utter_anything_else
@@ -20,8 +20,8 @@
   - update_phone_number_form
   - form{"name": "update_phone_number_form"}
   - form{"name": null}
-  - utter_ask_any_more_data
   - action_clear_temp_slots
+  - utter_ask_any_more_data
 * deny
   - utter_give_feedback
   - utter_anything_else
@@ -35,8 +35,8 @@
   - update_email_form
   - form{"name": "update_email_form"}
   - form{"name": null}
-  - utter_ask_any_more_data
   - action_clear_temp_slots
+  - utter_ask_any_more_data
 * deny
   - utter_give_feedback
   - utter_anything_else
@@ -50,8 +50,8 @@
   - update_email_form
   - form{"name": "update_email_form"}
   - form{"name": null}
-  - utter_ask_any_more_data
   - action_clear_temp_slots
+  - utter_ask_any_more_data
 * deny
   - utter_give_feedback
   - utter_anything_else
@@ -71,8 +71,8 @@
   - update_phone_number_form
   - form{"name": "update_phone_number_form"}
   - form{"name": null}
-  - utter_ask_any_more_data
   - action_clear_temp_slots
+  - utter_ask_any_more_data
 * deny
   - utter_give_feedback
   - utter_anything_else
@@ -94,8 +94,8 @@
   - update_email_form
   - form{"name": "update_email_form"}
   - form{"name": null}
-  - utter_ask_any_more_data
   - action_clear_temp_slots
+  - utter_ask_any_more_data
 * deny
   - utter_give_feedback
   - utter_anything_else
@@ -113,8 +113,8 @@
   - update_phone_number_form
   - form{"name": "update_phone_number_form"}
   - form{"name": null}
-  - utter_ask_any_more_data
   - action_clear_temp_slots
+  - utter_ask_any_more_data
 * deny
   - utter_give_feedback
   - utter_anything_else
@@ -134,8 +134,8 @@
   - update_email_form
   - form{"name": "update_email_form"}
   - form{"name": null}
-  - utter_ask_any_more_data
   - action_clear_temp_slots
+  - utter_ask_any_more_data
 * deny
   - utter_give_feedback
   - utter_anything_else
@@ -157,8 +157,8 @@
   - update_email_form
   - form{"name": "update_email_form"}
   - form{"name": null}
-  - utter_ask_any_more_data
   - action_clear_temp_slots
+  - utter_ask_any_more_data
 * deny
   - utter_give_feedback
   - utter_anything_else
@@ -180,8 +180,8 @@
   - update_phone_number_form
   - form{"name": "update_phone_number_form"}
   - form{"name": null}
-  - utter_ask_any_more_data
   - action_clear_temp_slots
+  - utter_ask_any_more_data
 * deny
   - utter_give_feedback
   - utter_anything_else
@@ -199,8 +199,8 @@
   - update_email_form
   - form{"name": "update_email_form"}
   - form{"name": null}
-  - utter_ask_any_more_data
   - action_clear_temp_slots
+  - utter_ask_any_more_data
 * affirm
   - utter_ask_which_data
 * deny
@@ -211,7 +211,7 @@
 * bye
   - action_restart
 
-## request email and phone number 6
+## request email and phone number 7
 * update_phone_number
   - update_phone_number_form
   - form{"name": "update_phone_number_form"}
@@ -222,8 +222,8 @@
   - update_email_form
   - form{"name": "update_email_form"}
   - form{"name": null}
-  - utter_ask_any_more_data
   - action_clear_temp_slots
+  - utter_ask_any_more_data
 * affirm
   - utter_ask_which_data
 * deny

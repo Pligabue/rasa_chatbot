@@ -21,6 +21,8 @@ responses:
   - text: O que você gostaria de fazer?
   utter_anything_else:
   - text: Posso te ajudar em alguma outra coisa?
+  utter_continue:
+  - text: Quer continuar?
   utter_bye:
   - text: Até mais!
   utter_greet:

@@ -33,7 +33,6 @@
     - slot{"cep": null}
     - utter_ask_any_more_data
 * deny
-    - utter_give_feedback
     - utter_anything_else
 
 ## interactive_story_1
@@ -62,5 +61,4 @@
     - slot{"phone_number": null}
     - slot{"email": null}
     - slot{"cep": null}
-    - utter_give_feedback
     - utter_anything_else

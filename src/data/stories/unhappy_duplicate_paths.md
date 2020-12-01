@@ -22,7 +22,6 @@
     - slot{"phone_number": null}
     - slot{"email": null}
     - slot{"cep": null}
-    - utter_give_feedback
     - utter_anything_else
 * affirm
     - utter_what_do_you_want
@@ -54,9 +53,9 @@
     - slot{"phone_number": null}
     - slot{"email": null}
     - slot{"cep": null}
-    - utter_give_feedback
     - utter_anything_else
 * deny
+    - utter_give_feedback
     - utter_bye
 
 ## interactive_story_1
@@ -88,7 +87,6 @@
     - slot{"phone_number": null}
     - slot{"email": null}
     - slot{"cep": null}
-    - utter_give_feedback
     - utter_anything_else
 * affirm
     - utter_what_do_you_want
@@ -125,7 +123,42 @@
     - slot{"phone_number": null}
     - slot{"email": null}
     - slot{"cep": null}
-    - utter_give_feedback
     - utter_anything_else
 * deny
+    - utter_give_feedback
     - utter_bye
+
+## interactive_story_1
+* get_duplicate_bill
+    - issue_duplicate_form
+    - form{"name": "issue_duplicate_form"}
+    - slot{"requested_slot": "cpf"}
+* inform{"cep": "04537080"}
+    - utter_unexpected_cep
+    - issue_duplicate_form
+    - slot{"requested_slot": "cpf"}
+* inform{"email": "email@globo.com"}
+    - utter_unexpected_email
+    - issue_duplicate_form
+    - slot{"requested_slot": "cpf"}
+* inform{"phone_number": "55 11 95375 5714"}
+    - utter_unexpected_phone_number
+    - issue_duplicate_form
+    - slot{"requested_slot": "cpf"}
+* form: inform{"cpf": "01234567895"}
+    - issue_duplicate_form
+    - slot{"cpf": "01234567895"}
+    - slot{"requested_slot": "month"}
+* form: inform{"month": "maio", "year": "2019"}
+    - form: issue_duplicate_form
+    - slot{"year": 2019}
+    - slot{"month": 5}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - action_clear_temp_slots
+    - slot{"month": null}
+    - slot{"year": null}
+    - slot{"phone_number": null}
+    - slot{"email": null}
+    - slot{"cep": null}
+    - utter_anything_else

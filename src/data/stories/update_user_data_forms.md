@@ -8,9 +8,9 @@
   - action_clear_temp_slots
   - utter_ask_any_more_data
 * deny
-  - utter_give_feedback
   - utter_anything_else
 * deny
+  - utter_give_feedback
   - utter_bye
 * bye
   - action_restart
@@ -23,7 +23,6 @@
   - action_clear_temp_slots
   - utter_ask_any_more_data
 * deny
-  - utter_give_feedback
   - utter_anything_else
 * affirm
   - utter_what_do_you_want
@@ -38,9 +37,9 @@
   - action_clear_temp_slots
   - utter_ask_any_more_data
 * deny
-  - utter_give_feedback
   - utter_anything_else
 * deny
+  - utter_give_feedback
   - utter_bye
 * bye
   - action_restart
@@ -53,7 +52,6 @@
   - action_clear_temp_slots
   - utter_ask_any_more_data
 * deny
-  - utter_give_feedback
   - utter_anything_else
 * affirm
   - utter_what_do_you_want
@@ -74,9 +72,9 @@
   - action_clear_temp_slots
   - utter_ask_any_more_data
 * deny
-  - utter_give_feedback
   - utter_anything_else
 * deny
+  - utter_give_feedback
   - utter_bye
 * bye
   - action_restart
@@ -97,7 +95,6 @@
   - action_clear_temp_slots
   - utter_ask_any_more_data
 * deny
-  - utter_give_feedback
   - utter_anything_else
 * affirm
   - utter_what_do_you_want
@@ -116,9 +113,9 @@
   - action_clear_temp_slots
   - utter_ask_any_more_data
 * deny
-  - utter_give_feedback
   - utter_anything_else
 * deny
+  - utter_give_feedback
   - utter_bye
 * bye
   - action_restart
@@ -137,7 +134,6 @@
   - action_clear_temp_slots
   - utter_ask_any_more_data
 * deny
-  - utter_give_feedback
   - utter_anything_else
 * affirm
   - utter_what_do_you_want
@@ -160,9 +156,9 @@
   - action_clear_temp_slots
   - utter_ask_any_more_data
 * deny
-  - utter_give_feedback
   - utter_anything_else
 * deny
+  - utter_give_feedback
   - utter_bye
 * bye
   - action_restart
@@ -183,7 +179,6 @@
   - action_clear_temp_slots
   - utter_ask_any_more_data
 * deny
-  - utter_give_feedback
   - utter_anything_else
 * affirm
   - utter_what_do_you_want
@@ -204,9 +199,9 @@
 * affirm
   - utter_ask_which_data
 * deny
-  - utter_give_feedback
   - utter_anything_else
 * deny
+  - utter_give_feedback
   - utter_bye
 * bye
   - action_restart
@@ -227,7 +222,6 @@
 * affirm
   - utter_ask_which_data
 * deny
-  - utter_give_feedback
   - utter_anything_else
 * affirm
   - utter_what_do_you_want

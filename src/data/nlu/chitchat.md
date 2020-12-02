@@ -45,6 +45,7 @@
 
 ## intent:bye
 - adeus
+- adiós
 - até
 - até algum dia
 - até breve
@@ -92,7 +93,10 @@
 - blz
 - certo
 - check
+- certeza
+- ctz
 - com certeza
+- com ctz
 - eh
 - eh isto mesmo
 - isso
@@ -101,6 +105,10 @@
 - isso msm
 - isto
 - ok
+- pode
+- pode!
+- pod
+- podi
 - positive
 - positivo
 - s

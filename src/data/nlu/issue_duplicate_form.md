@@ -76,6 +76,9 @@
 - [april](month)
 - [maio](month)
 - [junho](month)
+- [june](month)
+- [julho](month)
+- [july](month)
 - [agosto](month)
 - [setembro](month)
 - [outubro](month)
@@ -89,12 +92,15 @@
 - [mai](month)
 - [may](month)
 - [jun](month)
+- [jul](month)
 - [ago](month)
 - [set](month)
+- [sep](month)
 - [sept](month)
 - [out](month)
 - [nov](month)
 - [dez](month)
+- [dec](month)
 - [01](month)
 - [02](month)
 - [03](month)
@@ -251,6 +257,7 @@
 
 ## synonym:dezembro
 - dez
+- dec
 - december
 - 12
 

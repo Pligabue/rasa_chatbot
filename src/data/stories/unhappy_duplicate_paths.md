@@ -162,3 +162,25 @@
     - slot{"email": null}
     - slot{"cep": null}
     - utter_anything_else
+
+## interactive_story_1
+* get_duplicate_bill
+    - issue_duplicate_form
+    - form{"name": "issue_duplicate_form"}
+    - slot{"requested_slot": "cpf"}
+* deny
+    - utter_continue
+* affirm
+    - issue_duplicate_form
+    - slot{"requested_slot": "cpf"}
+* deny
+    - action_deactivate_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - action_clear_temp_slots
+    - slot{"month": null}
+    - slot{"year": null}
+    - slot{"phone_number": null}
+    - slot{"email": null}
+    - slot{"cep": null}
+    - utter_anything_else

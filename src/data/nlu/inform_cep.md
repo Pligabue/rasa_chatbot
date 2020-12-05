@@ -160,4 +160,4 @@
 - nos moramos no [02031-337](cep)
 
 ## regex:cep
-- \d{2}\D?\d{3}\D?\d{3}
+- \b\d{2}\D?\d{3}\D?\d{3}\b

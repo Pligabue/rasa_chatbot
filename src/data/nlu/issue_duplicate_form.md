@@ -119,18 +119,26 @@
 - mes de [fevereiro](month)
 - mes de [feverero](month)
 - mes de [fev](month)
+- mes de [feb](month)
 - mes de [março](month)
 - mes de [marco](month)
+- mes de [march](month)
 - mes de [mar](month)
 - mes de [abril](month)
 - mes de [abr](month)
+- mes de [apr](month)
 - mes de [maio](month)
 - mes de [mai](month)
+- mes de [may](month)
 - mes de [junho](month)
 - mes de [jun](month)
+- mes de [june](month)
 - mes de [agosto](month)
+- mes de [august](month)
 - mes de [ago](month)
 - mes de [set](month)
+- mes de [setembro](month)
+- mes de [september](month)
 - mes de [outubro](month)
 - mes de [out](month)
 - mes de [novembro](month)
@@ -149,6 +157,15 @@
 - mes [10](month)
 - mes [11](month)
 - mes [12](month)
+- mes [1](month)
+- mes [2](month)
+- mes [3](month)
+- mes [4](month)
+- mes [5](month)
+- mes [6](month)
+- mes [7](month)
+- mes [8](month)
+- mes [9](month)
 - [janeiro](month) de [2020](year)
 - [fevereiro](month) de [2019](year)
 - [março](month) de [2018](year)
@@ -200,6 +217,7 @@
 - janero
 - january
 - 01
+- 1
 
 ## synonym:fevereiro
 - fev
@@ -207,47 +225,59 @@
 - feb
 - february
 - 02
+- 2
 
 ## synonym:março
 - marco
 - mar
 - march
 - 03
+- 3
 
 ## synonym:abril
 - abr
 - april
+- apr
 - 04
+- 4
 
 ## synonym:maio
 - mai
 - may
 - 05
+- 5
 
 ## synonym:junho
 - jun
 - june
 - 06
+- 6
 
 ## synonym:julho
 - jul
 - july
 - 07
+- 7
 
 ## synonym:agosto
 - ago
 - august
+- aug
 - 08
+- 8
 
 ## synonym:setembro
 - set
+- sep
 - sept
 - september
 - 09
+- 9
 
 ## synonym:outubro
 - out
-- opt
+- oct
+- october
 - 10
 
 ## synonym:novembro
@@ -262,4 +292,4 @@
 - 12
 
 ## regex:year
-- (20|19)\d{2}
+- \b(20|19)\d{2}\b

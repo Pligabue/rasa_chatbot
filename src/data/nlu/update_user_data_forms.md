@@ -123,8 +123,10 @@
 - tem como mudar meu número?
 - tem como mudar meu telefone?
 - trocar celular
+- trocar de cel
 - trocar de celular
 - trocar de telefone
+- trocar tel
 - trocar telefone
 - troquei meu celular
 - troquei meu telefone

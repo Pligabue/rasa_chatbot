@@ -211,3 +211,121 @@
 - vc poderia mudar meu email?
 - você pode atualizar meu e-mail?
 - você poderia atualizar meu e-mail?
+
+## intent:update_cep
+- alterar cep
+- alterar o cep
+- cadastrei meu cep errado
+- eu gostaria de modificar meu cep
+- eu gostaria de trocar meu cep
+- eu mudei meu cep
+- eu preciso mudar meu cep no sistema
+- eu quero modificar meu cep
+- eu quero mudar de cep
+- eu troquei meu cep
+- gostaria de alterar meu cep
+- meu cep está errado
+- meu cep mudou
+- meu cep
+- meu cep está desatualizado
+- meu cep está errado
+- meu cep está incorreto
+- meu cep ficou desatualizado
+- meu cep ficou errado
+- meu cep mudou
+- meu cep no sistema está errado
+- meu cep no sistema ficou errado
+- meu cep no sistema tá errado
+- meu cep não tá atualizado
+- meu cep tá errado
+- meu cep tá incorreto
+- mudar cep
+- mudar meu cep
+- mudei de cep
+- novo cep
+- não preenchi certo meu cep
+- preciso atualizar meu cep
+- preciso mudar meu cep
+- preenchi meu cep errado
+- qria atualizar meu cep
+- qria trocar de cep
+- qro atualizar meu cep
+- qro trocar de cep
+- quero atualizar meu cep
+- quero mudar meu cep
+- quero trocar cep
+- quero trocar meu cep
+- tem como mudar meu cep?
+- tem como vc mudar meu cep?
+- tem como você alterar meu cep?
+- tem como você modificar meu cep?
+- trocar de cep
+- trocar cep
+- troquei de cep
+- troquei de cep
+- vc altera meu cep?
+- vc atualiza meu cep?
+- vc pode alterar meu cep?
+- vc poderia atualizar meu cep?
+- vc poderia mudar meu cep?
+- você pode atualizar meu cep?
+- você poderia atualizar meu cep?
+
+## intent:update_cpf
+- alterar cpf
+- alterar o cpf
+- cadastrei meu cpf errado
+- eu gostaria de modificar meu cpf
+- eu gostaria de trocar meu cpf
+- eu mudei meu cpf
+- eu preciso mudar meu cpf no sistema
+- eu quero modificar meu cpf
+- eu quero mudar de cpf
+- eu troquei meu cpf
+- gostaria de alterar meu cpf
+- meu cpf está errado
+- meu cpf mudou
+- meu cpf
+- meu cpf está desatualizado
+- meu cpf está errado
+- meu cpf está incorreto
+- meu cpf ficou desatualizado
+- meu cpf ficou errado
+- meu cpf mudou
+- meu cpf no sistema está errado
+- meu cpf no sistema ficou errado
+- meu cpf no sistema tá errado
+- meu cpf não tá atualizado
+- meu cpf tá errado
+- meu cpf tá incorreto
+- mudar cpf
+- mudar meu cpf
+- mudei de cpf
+- novo cpf
+- não preenchi certo meu cpf
+- preciso atualizar meu cpf
+- preciso mudar meu cpf
+- preenchi meu cpf errado
+- qria atualizar meu cpf
+- qria trocar de cpf
+- qro atualizar meu cpf
+- qro trocar de cpf
+- quero atualizar meu cpf
+- quero mudar meu cpf
+- quero trocar cpf
+- quero trocar meu cpf
+- tem como mudar meu cpf?
+- tem como vc mudar meu cpf?
+- tem como você alterar meu cpf?
+- tem como você modificar meu cpf?
+- trocar de cpf
+- trocar cpf
+- troquei de cpf
+- troquei de cpf
+- vc altera meu cpf?
+- vc atualiza meu cpf?
+- vc pode alterar meu cpf?
+- vc poderia atualizar meu cpf?
+- vc poderia mudar meu cpf?
+- você pode atualizar meu cpf?
+- você poderia atualizar meu cpf?

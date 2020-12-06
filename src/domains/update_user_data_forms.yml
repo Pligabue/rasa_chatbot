@@ -2,6 +2,8 @@ intents:
 - request_update
 - update_phone_number
 - update_email
+- update_cep
+- update_cpf
 
 forms:
 - update_phone_number_form
@@ -12,3 +14,7 @@ responses:
   - text: Quer atualizar que dados?
   utter_ask_any_more_data:
   - text: Quer atualizar mais algum dado?
+  utter_update_unavailable:
+  - text: Não posso alterar este tipo de dado, apenas telefone e e-mail.
+  utter_ask_any_other_data:
+  - text: Quer atualizar algum outro dado?

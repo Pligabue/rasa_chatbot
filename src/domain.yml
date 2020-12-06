@@ -31,6 +31,8 @@ intents:
 - request_update
 - supply_power_outage_information
 - thank
+- update_cep
+- update_cpf
 - update_email
 - update_phone_number
 responses:
@@ -38,6 +40,8 @@ responses:
   - text: Posso te ajudar em alguma outra coisa?
   utter_ask_any_more_data:
   - text: Quer atualizar mais algum dado?
+  utter_ask_any_other_data:
+  - text: Quer atualizar algum outro dado?
   utter_ask_cep:
   - text: Qual seu CEP?
   utter_ask_cpf:
@@ -122,6 +126,8 @@ responses:
   - text: Identifiquei um número de telefone inesperado na sua mensagem.
   utter_unexpected_year:
   - text: Identifiquei um ano inesperado na sua mensagem.
+  utter_update_unavailable:
+  - text: Não posso alterar este tipo de dado, apenas telefone e e-mail.
   utter_welcome:
   - text: Bem vindo!
   utter_what_do_you_want:

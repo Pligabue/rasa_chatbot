@@ -108,3 +108,46 @@
     - slot{"email": null}
     - slot{"cep": null}
     - respond_faq
+
+    
+## interactive_story_1
+* get_power_outage_information
+    - provide_power_supply_info_form
+    - form{"name": "provide_power_supply_info_form"}
+    - slot{"supplying_info": false}
+    - slot{"requested_slot": "cep"}
+* update_cep
+    - action_deactivate_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - action_clear_temp_slots
+    - slot{"month": null}
+    - slot{"year": null}
+    - slot{"phone_number": null}
+    - slot{"email": null}
+    - slot{"cep": null}
+    - utter_update_unavailable
+    - utter_ask_any_other_data
+* affirm
+  - utter_ask_which_data
+
+## interactive_story_1
+* supply_power_outage_information
+    - provide_power_supply_info_form
+    - form{"name": "provide_power_supply_info_form"}
+    - slot{"supplying_info": true}
+    - slot{"requested_slot": "cep"}
+* update_cpf
+    - action_deactivate_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - action_clear_temp_slots
+    - slot{"month": null}
+    - slot{"year": null}
+    - slot{"phone_number": null}
+    - slot{"email": null}
+    - slot{"cep": null}
+    - utter_update_unavailable
+    - utter_ask_any_other_data
+* deny
+  - utter_what_do_you_want

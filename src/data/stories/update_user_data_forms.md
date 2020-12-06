@@ -225,3 +225,31 @@
   - utter_anything_else
 * affirm
   - utter_what_do_you_want
+
+## request cep update
+* update_cep
+  - utter_update_unavailable
+  - utter_ask_any_other_data
+* deny
+  - utter_what_do_you_want
+
+## request cep update
+* update_cep
+  - utter_update_unavailable
+  - utter_ask_any_other_data
+* affirm
+  - utter_ask_which_data
+
+## request cpf update
+* update_cpf
+  - utter_update_unavailable
+  - utter_ask_any_other_data
+* deny
+  - utter_what_do_you_want
+
+## request cpf update
+* update_cpf
+  - utter_update_unavailable
+  - utter_ask_any_other_data
+* affirm
+  - utter_ask_which_data

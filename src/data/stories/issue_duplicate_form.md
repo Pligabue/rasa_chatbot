@@ -14,7 +14,6 @@
   - form{"name": "issue_duplicate_form"}
   - form{"name": null}
   - action_clear_temp_slots
-  - utter_give_feedback
   - utter_anything_else
 * deny
   - utter_give_feedback

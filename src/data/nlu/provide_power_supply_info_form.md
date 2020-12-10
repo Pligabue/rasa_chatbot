@@ -24,7 +24,13 @@
 - cadê a energia
 - caiu a eletricidade
 - caiu a energia
+- caiu a energia na minha regiao
+- caiu a energia na minha area
+- caiu a energia aqui
 - caiu a luz
+- caiu a luz na minha regiao
+- caiu a luz na minha area
+- caiu a luz aqui
 - caiu o fio de energia
 - estamos sem eletricidade
 - estamos sem energia

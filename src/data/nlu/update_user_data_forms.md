@@ -1,11 +1,14 @@
 ## intent:request_update
 - alterar dados
+- alterar dado
 - alterar informações
 - alterar meus dados
 - alterar os meus dados
 - atualizar dados
+- atualizar dado
 - atualizar meu perfil
 - atualizar meus dados
+- atualizar um dado
 - eu quero atualizar meus dados
 - eu quero atualizar minhas informações
 - gostria de alterar meus dados
@@ -30,8 +33,11 @@
 - minhas informações estão incorretas
 - minhas informações tão incorretas
 - mudar meus dados
+- mudar meu dado
+- mudar um dado
 - mudar os meus dados
 - novos dados
+- novo dado
 - os meus dados
 - preciso alterar uma coisa no meu perfil
 - preciso alterar uma informação
@@ -39,14 +45,17 @@
 - preciso mexer no meu perfil
 - preciso mudar meu perfil
 - preciso trocar meus dados
+- preciso trocar um dado
 - qro alterar os dados
 - qro atualizar meus dados
 - qro mudar meus dados
 - quero alterar as informações
 - quero alterar o perfil
+- quero alterar um dado
 - quero atualizar meu perfil
 - quero mudar meu perfil
 - quero trocar meus dados
+- quero trocar um dado
 - tem como atualizar meu perfil?
 - tem como atualizar minhas informações?
 - tem como mudar meu perfil?
@@ -62,8 +71,8 @@
 ## intent:update_phone_number
 - alterar celular
 - alterar de celular
-- alterar de telefone
-- alterar telefone
+- alterar de telefone para [55 11953755714](phone_number)
+- alterar telefone para [+55 \(11\) 95389-9865](phone_number)
 - como altero meu celular?
 - como altero meu número?
 - como altero meu telefone?
@@ -74,20 +83,20 @@
 - como posso alterar meu telefone?
 - dá pra alterar meu número?
 - dá pra atualizar meu número?
-- dá pra mudar meu número?
+- dá pra mudar meu número para [+55 \(11\) 95389-9865](phone_number)?
 - eu gostaria de atualizar meu número
 - eu gostaria de atualizar meu telefone
-- gostaria de alterar meu celular
+- gostaria de alterar meu celular para [55 11953755714](phone_number)
 - gostaria de alterar meu número de celular
 - gostaria de alterar meu número de telefone
 - gostaria de alterar meu telefone
 - meu No de celular mudou
-- meu No de telefone mudou
+- meu No de telefone mudou para [5521912345678](phone_number)
 - meu No tá errado
 - meu celular
 - meu celular está desatualizado
 - meu celular mudou de número
-- meu número mudou
+- meu número mudou para [5511953755714](phone_number)
 - meu número no sistema tá desatualizado
 - meu número no sistema tá errado
 - meu telefone
@@ -99,8 +108,8 @@
 - mudei de número de celular
 - mudei de número de telefone
 - mudei meu celular
-- mudei meu número
-- mudei meu telefone
+- mudei meu número para [55 11953755714](phone_number)
+- mudei meu telefone para [55 11953755714](phone_number)
 - novo celular
 - novo telefone
 - o cadastro do No tá errado
@@ -111,23 +120,24 @@
 - preciso mudar meu número
 - preciso mudar meu telefone
 - quero alterar meu número
-- quero atualizar meu número
+- quero atualizar meu  para [55 11953755714](phone_number)
 - quero informar meu celular novo
 - quero informar meu número novo
 - quero informar meu telefone novo
-- quero mudar o celular
+- quero mudar o celular para [55 11 987654321](phone_number)
 - quero trocar telefone
 - tem como atualizar meu celular?
 - tem como atualizar meu telefone?
 - tem como mudar meu celular?
 - tem como mudar meu número?
 - tem como mudar meu telefone?
-- trocar celular
+- trocar celular para [55 11953755714](phone_number)
 - trocar de cel
+- trocar de cel para [55 11 953755714](phone_number)
 - trocar de celular
-- trocar de telefone
+- trocar de telefone para [5511953755714](phone_number)
 - trocar tel
-- trocar telefone
+- trocar telefone para [+55 \(11\) 95389-9865](phone_number)
 - troquei meu celular
 - troquei meu telefone
 - vc atualiza meu celular?
@@ -142,13 +152,13 @@
 
 ## intent:update_email
 - alterar email
-- alterar o email
+- alterar o email para [example@email.com](email)
 - cadastrei meu email errado
 - cadastrei meu endereço de email errado
 - eu gostaria de modificar meu email
 - eu gostaria de modificar meu endereço de email
 - eu gostaria de trocar meu email
-- eu mudei meu e-mail
+- eu mudei meu e-mail para [example@email.com](email)
 - eu preciso mudar meu email no sistema
 - eu quero modificar meu email
 - eu quero mudar de e-mail
@@ -156,7 +166,7 @@
 - gostaria de alterar meu email
 - gostaria de alterar meu endereço de email
 - meu e-mail está errado
-- meu e-mail mudou
+- meu e-mail mudou para [example@email.com](email)
 - meu email
 - meu email está desatualizado
 - meu email está errado
@@ -172,7 +182,7 @@
 - meu email tá incorreto
 - meu endereço de e-mail mudou
 - meu endereço de email mudou
-- mudar email
+- mudar email para [example@email.com](email)
 - mudar meu e-mail
 - mudar meu email
 - mudei de e-mail
@@ -183,17 +193,17 @@
 - preciso atualizar meu e-mail
 - preciso atualizar meu endereço de e-mail
 - preciso atualizar meu endereço de email
-- preciso mudar meu email
+- preciso mudar meu email para [example@email.com](email)
 - preenchi meu email errado
 - preenchi meu endereço de email errado
 - qria atualizar meu email
-- qria trocar de email
+- qria trocar de email para [example@email.com](email)
 - qro atualizar meu email
 - qro trocar de email
 - quero atualizar meu e-mail
 - quero atualizar meu endereço de e-mail
 - quero mudar meu email
-- quero trocar email
+- quero trocar email para [example@email.com](email)
 - quero trocar meu e-mail
 - quero trocar meu email
 - tem como mudar meu email?
@@ -201,14 +211,14 @@
 - tem como você alterar meu email?
 - tem como você modificar meu email?
 - trocar de email
-- trocar email
+- trocar email para [example@email.com](email)
 - troquei de e-mail
 - troquei de email
 - vc altera meu email?
 - vc atualiza meu email?
 - vc pode alterar meu email?
 - vc poderia atualizar meu email?
-- vc poderia mudar meu email?
+- vc poderia mudar meu email para [example@email.com](email)?
 - você pode atualizar meu e-mail?
 - você poderia atualizar meu e-mail?
 

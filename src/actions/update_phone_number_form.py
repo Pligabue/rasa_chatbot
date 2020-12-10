@@ -25,7 +25,7 @@ class UpdatePhoneNumberForm(FormAction, CPFValidation):
         return {
             "cpf": [self.from_entity(entity="cpf", intent="inform")],
             "phone_number": [self.from_entity(entity="phone_number",
-                                              intent="inform")]
+                                              intent=["inform", "update_phone_number"])]
         }
 
     def submit(self,

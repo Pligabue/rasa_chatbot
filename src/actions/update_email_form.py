@@ -21,7 +21,7 @@ class UpdateEmailForm(FormAction, CPFValidation):
     def slot_mappings(self) -> Dict[Text, Union[Dict, List[Dict]]]:
         return {
             "cpf": [self.from_entity(entity="cpf", intent="inform")],
-            "email": [self.from_entity(entity="email", intent="inform")]
+            "email": [self.from_entity(entity="email", intent=["inform", "update_email"])]
         }
 
     def submit(self,

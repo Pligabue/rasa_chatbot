@@ -17,3 +17,7 @@
 ## faq technologies
 * faq/ask_technologies
   - Este projeto utiliza a biblioteca React para o desenvolvimento da plataforma web (front-end), com o auxílio do framework Material-UI para a criação da identidade visual.\n \nO chatbot (back-end) foi desenvolvido em Python utilizando a biblioteca Rasa NLU. Esta biblioteca utiliza um modelo de pipeline para executar as diversas tarefas que compõem o processamento de linguagem natural, tais como a extração de entidades, a indentificação de intenções e a seleção de respostas.\n \nPor fim, a comunicação entre os usuários e o chatbot foi feita com base na biblioteca Socket.IO, que se baseia no protocolo WebSockets.
+
+## faq who are you
+* faq/ask_who_are_you
+- Sou um chatbot! Sou um assistente virtual e estou aqui para tentar te ajudar com suas demandas relativas à distribuidora de energia elétrica!

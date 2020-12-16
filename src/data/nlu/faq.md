@@ -227,3 +227,23 @@
 - tecnologias do projeto
 - tecnologias utilizadas
 - tecnologias?
+
+## intent: faq/ask_who_are_you
+- com quem estou falando
+- com quem to falando
+- com quem falo
+- quem é voce
+- quem eh voce
+- quem é meu interlocutor
+- quem é o atendente
+- quem está me atendendo
+- quem esta me atendendo
+- quem me antende
+- estou sendo atendido por quem
+- to falando com quem
+- quem é voce que me atende
+- sabe me dizer quem é voce
+- quem é vc
+- voce é quem
+- voce eh quem
+- voce é?

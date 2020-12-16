@@ -133,6 +133,7 @@
 - nao, obrigado
 - neim
 - no
+- noa
 - nop
 - nope
 - nunca
